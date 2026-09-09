@@ -1,8 +1,10 @@
 # BYD iOS Localized
 
-**English · العربية · Русский**
+[**English**](README.md) · [**العربية**](README.ar.md) · [**Русский**](README.ru.md)
 
-Unofficial localization and navigation preferences for the Chinese BYD iPhone app. **Revision 2**, based on BYD **9.16.0**.
+Unofficial localization and navigation preferences for the Chinese BYD iPhone app. **Public beta · Revision 2**, based on BYD **9.16.0**. No jailbreak required.
+
+The [download page](https://shihabal3amri.github.io/BYD-iOS/) also has English, Arabic and Russian language buttons.
 
 [**Add to AltStore Classic**](https://shihabal3amri.github.io/BYD-iOS/) · [**Download the IPA**](https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r2) · [**Report a problem**](https://github.com/shihabal3amri/BYD-iOS/issues/new?template=beta-feedback.md)
 
@@ -29,6 +31,16 @@ Actual iPhone screenshots: Revision 2's My Car dashboard, language selection and
 
 ## Install or update
 
+### First-time AltStore setup
+
+Install **AltServer on a Mac or Windows computer**, then use it to install **AltStore Classic on your iPhone**. Use **your own Apple account**; a paid developer membership is not required. Initial setup includes USB pairing and Developer Mode on iOS 16 or later.
+
+- [Video tutorial in Arabic](https://youtu.be/05xOiC5TwQ8?si=iv-KIpAl5oyJoKnP)
+- [Video tutorial in English](https://youtu.be/yLuyVakPpUM?si=QloJ8z-acfZEbB4v)
+- Current official instructions: [macOS](https://faq.altstore.io/altstore-classic/how-to-install-altstore-macos) · [Windows](https://faq.altstore.io/altstore-classic/how-to-install-altstore-windows)
+
+The videos explain AltStore setup; screens and steps can vary by version. After setup, add BYD using the steps below.
+
 ### Updating an existing installation
 
 Open AltStore with AltServer running and reachable, let the source refresh, then choose **Update** for BYD under **My Apps**. Look for **9.16.0 · Revision 2** (build **202608311148**). Keep your existing app and use the same Apple account so its local data is retained. The IPA is about **339 MB**; download speed depends on your connection to GitHub.
@@ -46,13 +58,7 @@ If the link does not open AltStore, add this URL manually under **Browse → Sou
 https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/source.json
 ```
 
-For the normal AltStore Classic installation flow, AltServer must be reachable through the same Wi-Fi network or USB. Free Apple-account signing requires refreshing before the seven-day validity expires. See the [official AltServer guide](https://faq.altstore.io/altstore-classic/altserver).
-
-### If AltStore Classic is not installed
-
-Follow the official [macOS](https://faq.altstore.io/altstore-classic/how-to-install-altstore-macos) or [Windows](https://faq.altstore.io/altstore-classic/how-to-install-altstore-windows) setup guide. Initial setup requires a computer, USB pairing, an Apple account and Developer Mode on iOS 16 or later.
-
-As of **9 September 2026**, AltStore's remote-server mode is a Patreon-only beta and still requires initial computer setup. It is optional and is not required to download this project. See the [current remote-server instructions](https://faq.altstore.io/altstore-classic/no-computer-instructions).
+For the normal AltStore Classic installation flow, AltServer must be running and reachable through the same Wi-Fi network or USB. With a free Apple account, refresh **both AltStore and BYD** before their seven-day signing period expires. You need AltServer for installing, updating and refreshing; it is not required simply to open BYD while its signature remains valid. See the [official AltServer guide](https://faq.altstore.io/altstore-classic/altserver).
 
 ### Install using Impactor
 
@@ -62,7 +68,7 @@ The underlying build has been tested with **Impactor 2.5.0 (formerly PlumeImpact
 2. On the package options screen, replace the Chinese text in **Name** with **BYD**.
 3. Sign/install with your own Apple account. Keep the normal team-suffixed bundle identifier and app-group handling. Do not force the original App Store bundle identifier or remove the app-group entitlement.
 
-**If installation fails with Developer API error 35 / missing `appIdName`:** return to the package options, set **Name** to **BYD**, then retry. You can reuse the same IPA. Impactor 2.5.0 [keeps only ASCII letters when registering an app name](https://github.com/claration/Impactor/blob/v2.5.0/crates/plume_core/src/developer/mod.rs#L14-L17), so this IPA's original Chinese name becomes empty. Its Name option updates the bundle name before registration. This workaround is verified against the installer code; the reporting tester's successful installation is still pending.
+**If installation fails with Developer API error 35 / missing `appIdName`:** return to the package options, set **Name** to **BYD**, then retry. You can reuse the same IPA. Impactor 2.5.0 [keeps only ASCII letters when registering an app name](https://github.com/claration/Impactor/blob/v2.5.0/crates/plume_core/src/developer/mod.rs#L14-L17), so this IPA's original Chinese name becomes empty. Its Name option updates the bundle name before registration. This workaround is verified against the installer code; the reporting tester subsequently installed successfully through AltStore Classic.
 
 This IPA must be re-signed by an installer. Downloading it in Safari alone will not install it.
 
@@ -71,7 +77,7 @@ This IPA must be re-signed by an installer. Downloading it in Safari alone will 
 - The package declares **iOS 15.0 or later** and targets iPhones. This is a packaging requirement, not a claim that every model or iOS release has been tested.
 - The underlying code has **203 prior offline checks**. An Impactor-signed predecessor was installed on an iPhone X with iOS 16.7.16 and an iPhone XS with iOS 17.6.1. The final language/tab runtime audit was performed on the iPhone X.
 - Normal public-source installation and startup through **AltStore Classic 2.2.2** were verified on an **iPhone XS / iOS 17.6.1**. The maintainer also reports successful tests on several other iPhones.
-- Revision 2’s Bluetooth badge fix was reproduced and verified on the jailbroken iPhone X. Testing the new revision as an AltStore update on the XS is the next check.
+- Revision 2’s Bluetooth badge fix was reproduced and verified on the jailbroken iPhone X. Revision 2 (build **202608311148**) was subsequently confirmed installed through AltStore on the stock iPhone XS, and its fresh launch was verified. The dashboard badges have not been separately rechecked on the XS after that update.
 - Revision 2 adds one existing BYD PNG at the dashboard’s expected resource path and increments the build number. Every other existing IPA entry, including all executable code and translations, is byte-identical to public beta 1. The public packaging keeps the executable's code/data sections and translation resources unchanged. It uses minimal sideloading entitlements, excludes personal provisioning profiles, and removes the old App Store model allow-list so newer iPhones can be tested.
 - Chinese promotional artwork, some live content, unvisited screens and the About-page version prefix remain translation work.
 - The profile page can show a blank screen. The same behavior was observed in the official iOS app and Android app; its cause remains unresolved.

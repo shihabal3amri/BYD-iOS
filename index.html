@@ -1,62 +1,38 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Unofficial BYD iOS localization. English, Arabic and Russian, with customizable bottom tabs. Download revision 2 for personal sideloading.">
+  <meta name="description" content="Try the free BYD iOS localization beta in English, Arabic or Russian. Install through AltStore Classic and customize your bottom tabs. No jailbreak required.">
   <meta name="theme-color" content="#e60012">
-  <title>BYD iOS Localized · Revision 2</title>
+  <title>BYD iOS Localized · Public beta</title>
   <link rel="icon" href="assets/icon.png">
-  <style>
-    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #19202b; background: #f5f6f8; }
-    * { box-sizing: border-box; }
-    body { margin: 0; line-height: 1.65; }
-    main { max-width: 900px; margin: auto; padding: 48px 24px 40px; }
-    header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
-    header img { width: 64px; height: 64px; border-radius: 16px; }
-    header p { margin: 0; font-size: 14px; color: #515968; }
-    header strong { font-size: 20px; letter-spacing: -.4px; }
-    .badge { display: inline-block; padding: 4px 10px; border-radius: 6px; background: #fee9ec; color: #a40012; font-size: 12px; font-weight: 700; letter-spacing: .7px; }
-    h1 { font-size: clamp(32px, 6vw, 48px); line-height: 1.14; letter-spacing: -1.5px; margin: 18px 0 14px; }
-    .intro { font-size: 19px; color: #515968; max-width: 680px; }
-    h2 { margin: 0 0 12px; font-size: 22px; line-height: 1.35; letter-spacing: -.4px; }
-    a { color: #b00013; text-underline-offset: 3px; }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 26px 0 14px; }
-    .button { display: inline-flex; justify-content: center; align-items: center; gap: 8px; min-height: 48px; padding: 12px 20px; text-decoration: none; border-radius: 10px; background: #d40016; color: white; font-size: 16px; font-weight: 650; border: 1px solid #d40016; cursor: pointer; }
-    .button.secondary { background: white; color: #232a36; border-color: #cbd0d8; }
-    .button:focus-visible, a:focus-visible, textarea:focus-visible { outline: 3px solid #1166dd; outline-offset: 4px; }
-    .note { color: #515968; font-size: 14px; }
-    .card { margin-top: 28px; padding: 26px; border: 1px solid #e0e3e9; border-radius: 16px; background: white; }
-    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
-    .grid .card { margin-top: 28px; }
-    ol, ul { padding-left: 22px; margin: 10px 0; }
-    li { padding: 3px 0; }
-    textarea { display: block; width: 100%; min-height: 90px; font: 13px/1.6 ui-monospace, SFMono-Regular, Consolas, monospace; color: #253047; background: #f5f6f8; border: 1px solid #cbd0d8; border-radius: 8px; padding: 12px; resize: vertical; overflow-wrap: anywhere; }
-    .copyrow { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
-    .copyrow button { font-size: 14px; min-height: 42px; padding: 8px 15px; }
-    .gallery { margin-top: 32px; }
-    .screens { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; margin-top: 20px; }
-    .screens figure { min-width: 0; margin: 0; }
-    .screens a { display: block; border-radius: 18px; }
-    .screens img { display: block; width: 100%; height: auto; border: 1px solid #e0e3e9; border-radius: 18px; }
-    .screens figcaption { margin-top: 10px; color: #515968; font-size: 13px; line-height: 1.45; }
-    .screens figcaption strong { display: block; color: #19202b; font-size: 14px; margin-bottom: 3px; }
-    footer { margin-top: 34px; padding-top: 20px; border-top: 1px solid #dddfe5; color: #515968; font-size: 13px; }
-    footer a { color: #414a59; }
-    @media (max-width: 580px) { main { padding: 28px 18px; } .grid { grid-template-columns: 1fr; gap: 0; } .card { padding: 20px; } .actions a { width: 100%; } .screens { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 14px; } }
-  </style>
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="canonical" href="https://shihabal3amri.github.io/BYD-iOS/">
+  <link rel="alternate" hreflang="en" href="https://shihabal3amri.github.io/BYD-iOS/">
+  <link rel="alternate" hreflang="ar" href="https://shihabal3amri.github.io/BYD-iOS/ar/">
+  <link rel="alternate" hreflang="ru" href="https://shihabal3amri.github.io/BYD-iOS/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://shihabal3amri.github.io/BYD-iOS/">
+  <script defer src="assets/site.js"></script>
 </head>
 <body>
 <main>
-  <header><img src="assets/icon.png" width="64" height="64" alt="BYD app icon"><div><strong>BYD iOS Localized</strong><p>Unofficial community project</p></div></header>
-  <span class="badge">9.16.0 · REVISION 2</span>
+  <header>
+    <div class="brand"><img src="assets/icon.png" width="64" height="64" alt="BYD app icon"><div><strong dir="ltr">BYD iOS Localized</strong><p>Unofficial community project</p></div></div>
+    <nav class="languages" aria-label="Page language">
+        <a href="./" lang="en" hreflang="en" dir="auto" aria-current="page">English</a>
+        <a href="ar/" lang="ar" hreflang="ar" dir="auto">العربية</a>
+        <a href="ru/" lang="ru" hreflang="ru" dir="auto">Русский</a>
+    </nav>
+  </header>
+  <span class="badge">PUBLIC BETA · <bdi>9.16.0 · R2</bdi></span>
   <h1>Your BYD app.<br>Your language.</h1>
-  <p class="intro">English, <span lang="ar" dir="rtl">العربية</span> and <span lang="ru">Русский</span>, with the bottom tabs you want to see.</p>
+  <p class="intro">The Chinese BYD iPhone app in English, <span lang="ar" dir="rtl">العربية</span> and <span lang="ru">Русский</span>, with the bottom tabs you want to see. Free to try, with no jailbreak required.</p>
   <div class="actions">
     <a class="button" id="add-source" href="altstore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2Fshihabal3amri%2FBYD-iOS%2Fmain%2Fsource.json">Add to AltStore Classic</a>
     <a class="button secondary" id="download" href="https://github.com/shihabal3amri/BYD-iOS/releases/download/v9.16.0-r2/BYD-iOS_9.16.0_r2.ipa">Download IPA · 339 MB</a>
   </div>
-  <p class="note"><strong>AltStore Classic must already be installed and configured.</strong> Open this page in Safari on your iPhone. This project is free; initial AltStore setup still requires a computer. The downloaded IPA must be signed by an installer.</p>
+  <p class="note"><strong>AltStore Classic must already be installed and configured.</strong> Open this page in Safari on your iPhone. Initial setup requires a Mac or Windows computer and your own Apple account. <a href="#altstore-setup">New to AltStore? Start here.</a></p>
   <section class="gallery" aria-labelledby="screenshots-heading">
     <h2 id="screenshots-heading">Inside the app</h2>
     <p class="note">Actual iPhone screenshots. Tap an image to view it full size.</p>
@@ -67,54 +43,50 @@
       <figure><a href="assets/language-ru.png"><img src="assets/language-ru.png" alt="Russian language selector with Russian selected" width="1125" height="2436" loading="lazy"></a><figcaption><strong>Use it in Russian</strong>Language settings in Russian.</figcaption></figure>
     </div>
   </section>
+  <section class="card" id="altstore-setup" aria-labelledby="setup-heading">
+    <h2 id="setup-heading">1. Set up AltStore Classic</h2>
+    <p>Already have AltStore Classic? Continue to the next step. Otherwise, install <strong>AltServer on your computer</strong> and use it to install <strong>AltStore Classic on your iPhone</strong>. Use your own Apple account; no paid developer membership is required. Enable Developer Mode on iOS 16 or later.</p>
+    <div class="tutorials">
+      <a class="tutorial" href="https://youtu.be/05xOiC5TwQ8?si=iv-KIpAl5oyJoKnP"><strong>AltStore tutorial · Arabic</strong><span>Watch on YouTube ↗</span></a>
+      <a class="tutorial" href="https://youtu.be/yLuyVakPpUM?si=QloJ8z-acfZEbB4v"><strong>AltStore tutorial · English</strong><span>Watch on YouTube ↗</span></a>
+    </div>
+    <p class="note">The videos explain AltStore setup. Screens and steps may differ by version; use the current official guides if needed: <a href="https://faq.altstore.io/altstore-classic/how-to-install-altstore-macos">macOS guide</a> · <a href="https://faq.altstore.io/altstore-classic/how-to-install-altstore-windows">Windows guide</a>.</p>
+  </section>
   <section class="card" aria-labelledby="install-heading">
-    <h2 id="install-heading">Install or update</h2>
+    <h2 id="install-heading">2. Install BYD or update</h2>
     <ol>
-      <li>Tap <strong>Add to AltStore Classic</strong> and confirm adding the source.</li>
+      <li>Tap <strong>Add to AltStore Classic</strong> above and confirm adding the source.</li>
       <li>Find <strong>BYD Localized</strong> in AltStore, review permissions and install with your own Apple account.</li>
       <li>Open BYD and sign in to your own BYD account. Go to <strong>Me → Settings</strong> to choose your language and bottom tabs.</li>
     </ol>
-    <p><strong>Already installed?</strong> Refresh the source in AltStore, then open <strong>My Apps → BYD → Update</strong>. Look for <strong>9.16.0 · Revision 2</strong>. Keep your existing app and use the same Apple account.</p>
-    <p class="note">For normal AltStore Classic use, keep AltServer reachable through the same Wi-Fi network or USB. Free Apple-account signing needs refreshing within seven days. <a href="https://github.com/shihabal3amri/BYD-iOS#install-or-update">Read the installation guide</a>.</p>
+    <p><strong>Already installed?</strong> Refresh the source in AltStore, then choose <strong>Update</strong> for BYD under <strong>My Apps</strong>. Look for <strong>9.16.0 · Revision 2</strong>. Keep your existing app and use the same Apple account to preserve its local data.</p>
+    <p class="note">Keep AltServer running and reachable over the same Wi-Fi network or USB when installing, updating or refreshing. With a free Apple account, refresh both AltStore and BYD before their seven-day signing period expires. The download is about 339 MB; speed depends on your connection to GitHub. <a href="https://github.com/shihabal3amri/BYD-iOS/blob/main/README.md#install-or-update">Read the full guide</a>.</p>
     <p><label for="source-url">If the button does not open AltStore, add this URL under <strong>Browse → Sources → +</strong>:</label></p>
-    <textarea id="source-url" readonly spellcheck="false">https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/source.json</textarea>
-    <div class="copyrow"><button type="button" class="button secondary" id="copy-source">Copy source URL</button><span id="copy-status" class="note" role="status" aria-live="polite"></span></div>
+    <textarea id="source-url" dir="ltr" readonly spellcheck="false">https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/source.json</textarea>
+    <div class="copyrow"><button type="button" class="button secondary" id="copy-source" data-success="Source URL copied." data-fallback="Select and copy the URL above.">Copy source URL</button><span id="copy-status" class="note" role="status" aria-live="polite"></span></div>
   </section>
   <section class="card" aria-labelledby="impactor-heading">
     <h2 id="impactor-heading">Installing with Impactor</h2>
     <p>Download the IPA and import it into <a href="https://github.com/claration/Impactor">Impactor</a>. On the package options screen, change <strong>Name</strong> from the Chinese text to <strong>BYD</strong>, then sign and install with your own Apple account.</p>
-    <p class="note">If you see <strong>Developer API error 35</strong> about a missing <strong>appIdName</strong>, set Name to BYD and retry with the same IPA. Keep the default identifier and app-group handling. <a href="https://github.com/shihabal3amri/BYD-iOS#install-using-impactor">Read the Impactor instructions</a>.</p>
+    <p class="note">If you see <strong>Developer API error 35</strong> about a missing <strong>appIdName</strong>, set Name to BYD and retry with the same IPA. Keep the default identifier and app-group handling. Downloading an IPA alone does not install it. <a href="https://github.com/shihabal3amri/BYD-iOS/blob/main/README.md#install-using-impactor">Read the Impactor instructions</a>.</p>
   </section>
   <div class="grid">
     <section class="card" aria-labelledby="features-heading">
       <h2 id="features-heading">Make it yours</h2>
-      <ul><li>Choose English, Arabic or Russian.</li><li>Hide Discover, Mall and Service individually.</li><li>Find My Car by its original car icon.</li></ul>
-      <p class="note">Fully close and reopen BYD after changing language. Tab visibility changes immediately.</p>
+      <ul><li>Choose English, Arabic or Russian in Settings.</li><li>Hide Discover, Mall and Service individually.</li><li>Find My Car by its original car icon.</li></ul>
+      <p class="note">Fully close and reopen BYD after changing language. Tab visibility changes immediately; My Car and Me remain available.</p>
     </section>
     <section class="card" aria-labelledby="status-heading">
-      <h2 id="status-heading">Bluetooth badges restored</h2>
-      <p>Revision 2 restores Bluetooth badges on supported dashboard controls. The fix uses BYD’s original artwork and keeps connection and control logic unchanged. AltStore installation and startup were verified with the previous release on an iPhone XS.</p>
-      <p class="note">Some Chinese content and artwork remain. The profile page may be blank. Wakeup unlock is not included. Other iPhones and iOS versions require testing.</p>
-      <a href="https://github.com/shihabal3amri/BYD-iOS/issues/new?template=beta-feedback.md">Report a problem →</a>
+      <h2 id="status-heading">Public beta · Revision 2</h2>
+      <p>Revision 2 restores Bluetooth badges on supported dashboard controls. It has installed and launched through AltStore Classic on a non-jailbroken iPhone XS. The maintainer also reports successful testing on several other iPhones; broader feedback is welcome.</p>
+      <p class="note">Requires iOS 15 or later; not every device or vehicle function has been tested. Some Chinese content and artwork remain. The profile page may be blank. Wakeup unlock is not included yet.</p>
+      <a href="https://github.com/shihabal3amri/BYD-iOS/issues/new?template=beta-feedback.md">Report a problem</a>
     </section>
   </div>
   <footer>
-    <p><a href="https://github.com/shihabal3amri/BYD-iOS">Project &amp; instructions</a> · <a href="https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r2">Release notes &amp; checksums</a> · <a href="https://faq.altstore.io/altstore-classic/how-to-install-altstore-macos">Set up AltStore</a></p>
-    <p>Unofficial project, not affiliated with or endorsed by BYD. BYD's original application and assets belong to their respective owners. Apple-restricted capabilities such as Wallet car keys, push notifications and Siri integration are not promised for this sideloaded build. This is an AltStore Classic source, not an AltStore PAL listing.</p>
+    <p><a href="https://github.com/shihabal3amri/BYD-iOS/blob/main/README.md">Project &amp; instructions</a> · <a href="https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r2">Release notes &amp; checksums</a> · <a href="#altstore-setup">Set up AltStore</a></p>
+    <p>Unofficial project, not affiliated with or endorsed by BYD. BYD’s original application and assets belong to their respective owners. Apple-restricted capabilities such as Wallet car keys, push notifications and Siri integration are not promised for this sideloaded build. This is an AltStore Classic source, not an AltStore PAL listing.</p>
   </footer>
 </main>
-<script>
-  document.getElementById('copy-source').addEventListener('click', async () => {
-    const field = document.getElementById('source-url');
-    const status = document.getElementById('copy-status');
-    try {
-      await navigator.clipboard.writeText(field.value);
-      status.textContent = 'Source URL copied.';
-    } catch {
-      field.focus(); field.select();
-      status.textContent = 'Select and copy the URL above.';
-    }
-  });
-</script>
 </body>
 </html>
