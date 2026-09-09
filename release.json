@@ -1,0 +1,32 @@
+{
+  "release": "v9.16.0-beta.1",
+  "file": "BYD-iOS_9.16.0_beta1.ipa",
+  "sha256": "5076672bde1f88165ee1ca41c77f901ad3dbf63d258df9de404f6ea505cf31f3",
+  "bytes": 339190209,
+  "base_version": "9.16.0",
+  "base_build": "202608311147",
+  "bundle_identifier_before_resigning": "com.byd.BYDi",
+  "minimum_ios": "15.0",
+  "zip_crc_verified": true,
+  "main_code_and_data_sections_preserved": true,
+  "all_four_existing_patches_verified": true,
+  "all_translation_maps_verified": true,
+  "only_modified_entries": [
+    "Payload/\u6bd4\u4e9a\u8fea.app/\u6bd4\u4e9a\u8fea",
+    "Payload/\u6bd4\u4e9a\u8fea.app/Info.plist"
+  ],
+  "removed_stale_signature_files": [
+    "Payload/\u6bd4\u4e9a\u8fea.app/_CodeSignature/",
+    "Payload/\u6bd4\u4e9a\u8fea.app/_CodeSignature/CodeResources"
+  ],
+  "embedded_mobileprovision_count": 0,
+  "private_device_markers_absent": true,
+  "device_data_and_audit_helper_absent": true,
+  "packaging": "Re-signable IPA; ad-hoc main signature with app-group entitlement only. A user installer must sign and provision it before installation.",
+  "model_allow_list_removed": true,
+  "supported_device_note": "Removing the old model allow-list permits testing; it does not establish compatibility with untested iPhones.",
+  "prior_code_checks": 203,
+  "prior_device_validation": "Impactor-signed predecessor installed on iPhone X (iOS 16.7.16) and iPhone XS (iOS 17.6.1). Final preference runtime audit performed on iPhone X.",
+  "altstore_runtime_validation": "Pending an independent tester; feed and signing-name compatibility checked offline.",
+  "generated_at": "2026-09-09T06:08:18.219351+00:00"
+}

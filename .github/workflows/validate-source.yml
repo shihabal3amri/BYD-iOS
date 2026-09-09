@@ -1,0 +1,14 @@
+name: Validate AltStore source
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check catalogue and release metadata
+        run: python3 scripts/validate_source.py

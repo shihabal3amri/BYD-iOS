@@ -1,0 +1,7 @@
+*.ipa
+*.p12
+*.pfx
+*.mobileprovision
+*.mobiledevicepairing
+.DS_Store
+__pycache__/

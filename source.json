@@ -1,0 +1,59 @@
+{
+  "name": "BYD iOS Localized",
+  "identifier": "io.github.shihabal3amri.byd-ios",
+  "subtitle": "English · العربية · Русский",
+  "description": "Unofficial BYD iOS localization and navigation preferences. Public beta downloads for personal sideloading.",
+  "iconURL": "https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/assets/icon.png",
+  "website": "https://github.com/shihabal3amri/BYD-iOS",
+  "tintColor": "#E60012",
+  "apps": [
+    {
+      "name": "BYD Localized — Beta",
+      "bundleIdentifier": "com.byd.BYDi",
+      "developerName": "shihabal3amri · unofficial localization",
+      "subtitle": "English, Arabic and Russian + customizable tabs",
+      "localizedDescription": "Unofficial localized BYD 9.16.0 beta. Choose English, Arabic or Russian in Me → Settings → Language. Hide Discover, Mall and Service individually. My Car uses the original car icon. Fully close and reopen BYD after changing language.\n\nRequires AltStore Classic to be installed and configured; adding this source does not install AltStore. The app is re-signed with your own Apple account. This is not an AltStore PAL listing.\n\nThe underlying build was tested with Impactor. AltStore installation and other Apple accounts/iOS versions need beta testing. Chinese artwork and some live content remain untranslated. The profile page may be blank. Wakeup unlock is not included. Apple-restricted capabilities such as Wallet car keys and push notifications are not promised for this sideloaded build. Not affiliated with or endorsed by BYD.",
+      "iconURL": "https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/assets/icon.png",
+      "tintColor": "#E60012",
+      "category": "utilities",
+      "screenshots": [
+        "https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/assets/language-en.png",
+        "https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/assets/language-ru.png"
+      ],
+      "versions": [
+        {
+          "version": "9.16.0",
+          "buildVersion": "202608311147",
+          "marketingVersion": "9.16.0 · Public beta 1",
+          "date": "2026-09-09T06:08:18.219351+00:00",
+          "localizedDescription": "First public beta: English/Arabic/Russian language selection, configurable bottom tabs, and My Car icon. Includes existing launch, network and post-login fixes. AltStore runtime compatibility awaits independent testing.",
+          "downloadURL": "https://github.com/shihabal3amri/BYD-iOS/releases/download/v9.16.0-beta.1/BYD-iOS_9.16.0_beta1.ipa",
+          "size": 339190209,
+          "minOSVersion": "15.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.security.application-groups"
+        ],
+        "privacy": {
+          "NSFaceIDUsageDescription": "我们需要使用您的面容 ID，用于车辆控制功能，替代输入操作密码",
+          "NSLocalNetworkUsageDescription": "我们想访问您的本地网络，用于手机app与pad端进行镜像传输",
+          "NSMicrophoneUsageDescription": "我们想访问您的麦克风，用于发帖拍摄视频、在线客服拍摄视频和使用卫星通话服务",
+          "NSLocationUsageDescription": "我们想访问您的位置，用于在地图上展示、寻车、收藏地点、搜索周边服务店/充电桩/加油站/停车场/洗车店/目的地、展示发帖位置、展示救援地点、与服务顾问聊天时发送位置、为您提供附近的车主服务、远程控制车载无人机时需要定位服务辅助、购车咨询服务、卫星通信模块获取坐标信息",
+          "NSLocationWhenInUseUsageDescription": "我们想访问您的位置，用于在地图上展示、寻车、收藏地点、搜索周边服务店/充电桩/加油站/停车场/洗车店/目的地、展示发帖位置、展示救援地点、与服务顾问聊天时发送位置、为您提供附近的车主服务、远程控制车载无人机时需要定位服务辅助、购车咨询服务、卫星通信模块获取坐标信息",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "我们想访问您的位置，用于在地图上展示、寻车、收藏地点、搜索周边服务店/充电桩/加油站/停车场/洗车店/目的地、展示发帖位置、展示救援地点、与服务顾问聊天时发送位置、为您提供附近的车主服务、远程控制车载无人机时需要定位服务辅助、购车咨询服务、卫星通信模块获取坐标信息",
+          "NSPhotoLibraryAddUsageDescription": "我们想访问您的照片与视频，用于社区发帖上传您选择的图片或视频、选择本地图片扫码登录车机、修改头像、与服务顾问聊天时发送图片或视频、分享图片内容、上传反馈问题的图片、上传申请退款的图片、保存千里眼的截图或录像和远程自定义车机壁纸",
+          "NSPhotoLibraryUsageDescription": "我们想访问您的照片与视频，用于社区发帖上传您选择的图片或视频、选择本地图片扫码登录车机、修改头像、与服务顾问聊天时发送图片或视频、分享图片内容、上传反馈问题的图片、上传申请退款的图片、保存千里眼的截图或录像和远程自定义车机壁纸",
+          "NSContactsUsageDescription": "我们想访问您的通讯录，用于新建授权用户时选择通讯录中的手机号",
+          "NSSiriUsageDescription": "您的部分“比亚迪”数据将发给Apple以处理您的请求，如果不允许，您将无法使用Siri唤起比亚迪App",
+          "NSCameraUsageDescription": "我们想访问您的相机，用于社区发帖拍摄照片或视频、扫码登录车机、修改头像、与服务顾问聊天时拍摄和发送图片或视频、拍照上传反馈问题的图片、拍照上传申请退款的图片、AR识别车辆",
+          "NSBluetoothAlwaysUsageDescription": "我们需要使用您的蓝牙来实现蓝牙控制车辆功能、连接ETC蓝牙进行激活、控制智能设备、连接卫星通信设备",
+          "NSLocationTemporaryUsageDescriptionDictionary": "PurposeKey: 需要您的精确位置以准确地在地图上显示您的具体位置\nPurposeKeyGameControls: 需要您的精确位置以获取当前App所连WiFi的SSID\nPurposeKeyMirrorControls: 需要您的精确位置以获取当前App所连WiFi的SSID\nPurposeKeyFavorite: 添加当前位置为收藏需要使用您的精确位置\nPurposeKeyUAVControls: 需要你的精确位置用于远程控制车载无人机时的定位辅助，以提供更精准的服务。",
+          "NSBluetoothPeripheralUsageDescription": "我们需要使用您的蓝牙来实现蓝牙控制车辆功能、连接ETC蓝牙进行激活、控制智能设备、连接卫星通信设备"
+        }
+      }
+    }
+  ],
+  "news": []
+}
