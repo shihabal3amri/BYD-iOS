@@ -47,7 +47,13 @@ As of **9 September 2026**, AltStore's remote-server mode is a Patreon-only beta
 
 ### Install using Impactor
 
-The underlying build has been tested with **Impactor 2.5.0 (formerly PlumeImpactor)**. Download the IPA from the release and import it into [Impactor](https://github.com/claration/Impactor), then sign/install with your own Apple account. Keep the normal team-suffixed bundle identifier and app-group handling. Do not force the original App Store bundle identifier or remove the app-group entitlement.
+The underlying build has been tested with **Impactor 2.5.0 (formerly PlumeImpactor)**.
+
+1. Download the IPA from the release and import it into [Impactor](https://github.com/claration/Impactor).
+2. On the package options screen, replace the Chinese text in **Name** with **BYD**.
+3. Sign/install with your own Apple account. Keep the normal team-suffixed bundle identifier and app-group handling. Do not force the original App Store bundle identifier or remove the app-group entitlement.
+
+**If installation fails with Developer API error 35 / missing `appIdName`:** return to the package options, set **Name** to **BYD**, then retry. You can reuse the same IPA. Impactor 2.5.0 [keeps only ASCII letters when registering an app name](https://github.com/claration/Impactor/blob/v2.5.0/crates/plume_core/src/developer/mod.rs#L14-L17), so this IPA's original Chinese name becomes empty. Its Name option updates the bundle name before registration. This workaround is verified against the installer code; the reporting tester's successful installation is still pending.
 
 This IPA must be re-signed by an installer. Downloading it in Safari alone will not install it.
 
