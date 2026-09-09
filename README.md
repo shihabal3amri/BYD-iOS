@@ -4,7 +4,7 @@
 
 Unofficial localization and navigation preferences for the Chinese BYD iPhone app. **Public beta 1**, based on BYD **9.16.0**.
 
-[**Add to AltStore Classic**](https://altstore.io/source/raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/source.json?app=com.byd.BYDi) · [**Download the beta IPA**](https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-beta.1) · [**Report a problem**](https://github.com/shihabal3amri/BYD-iOS/issues/new?template=beta-feedback.md)
+[**Add to AltStore Classic**](https://shihabal3amri.github.io/BYD-iOS/) · [**Download the beta IPA**](https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-beta.1) · [**Report a problem**](https://github.com/shihabal3amri/BYD-iOS/issues/new?template=beta-feedback.md)
 
 **AltStore Classic must already be installed and configured.** This link adds the BYD catalogue; it does not install AltStore. There is no charge for this project or its downloads. This is not an AltStore PAL listing or a computer-free initial installation service.
 
