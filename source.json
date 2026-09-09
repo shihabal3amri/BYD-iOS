@@ -17,7 +17,9 @@
       "tintColor": "#E60012",
       "category": "utilities",
       "screenshots": [
+        "https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/assets/dashboard-r2.png",
         "https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/assets/language-en.png",
+        "https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/assets/bottom-bar-ar.png",
         "https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/assets/language-ru.png"
       ],
       "versions": [

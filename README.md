@@ -19,9 +19,13 @@ Unofficial localization and navigation preferences for the Chinese BYD iPhone ap
 Fully close BYD in the iPhone app switcher and reopen it after changing language. Bottom-bar changes take effect immediately. My Car and Me remain available.
 
 <p>
-  <img src="assets/language-en.png" alt="English language selector with English, Arabic and Russian options" width="260">
-  <img src="assets/language-ru.png" alt="Russian language selector" width="260">
+  <a href="assets/dashboard-r2.png"><img src="assets/dashboard-r2.png" alt="My Car dashboard with restored Bluetooth badges on Lock, Windows, Engine Off, Trunk and AC" width="200"></a>
+  <a href="assets/language-en.png"><img src="assets/language-en.png" alt="English language selector with English, Arabic and Russian options" width="200"></a>
+  <a href="assets/bottom-bar-ar.png"><img src="assets/bottom-bar-ar.png" alt="Arabic bottom-bar settings for Discover, Mall and Service" width="200"></a>
+  <a href="assets/language-ru.png"><img src="assets/language-ru.png" alt="Russian language selector" width="200"></a>
 </p>
+
+Actual iPhone screenshots: Revision 2's My Car dashboard, language selection and customizable bottom tabs. Select an image to view it full size.
 
 ## Install or update
 
