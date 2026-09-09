@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Unofficial BYD iOS localization. English, Arabic and Russian, with customizable bottom tabs. Download public beta 1 for personal sideloading.">
+  <meta name="description" content="Unofficial BYD iOS localization. English, Arabic and Russian, with customizable bottom tabs. Download revision 2 for personal sideloading.">
   <meta name="theme-color" content="#e60012">
-  <title>BYD iOS Localized · Public beta</title>
+  <title>BYD iOS Localized · Revision 2</title>
   <link rel="icon" href="assets/icon.png">
   <style>
     :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #19202b; background: #f5f6f8; }
@@ -44,22 +44,23 @@
 <body>
 <main>
   <header><img src="assets/icon.png" width="64" height="64" alt="BYD app icon"><div><strong>BYD iOS Localized</strong><p>Unofficial community project</p></div></header>
-  <span class="badge">9.16.0 · PUBLIC BETA 1</span>
+  <span class="badge">9.16.0 · REVISION 2</span>
   <h1>Your BYD app.<br>Your language.</h1>
   <p class="intro">English, <span lang="ar" dir="rtl">العربية</span> and <span lang="ru">Русский</span>, with the bottom tabs you want to see.</p>
   <div class="actions">
     <a class="button" id="add-source" href="altstore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2Fshihabal3amri%2FBYD-iOS%2Fmain%2Fsource.json">Add to AltStore Classic</a>
-    <a class="button secondary" id="download" href="https://github.com/shihabal3amri/BYD-iOS/releases/download/v9.16.0-beta.1/BYD-iOS_9.16.0_beta1.ipa">Download IPA · 339 MB</a>
+    <a class="button secondary" id="download" href="https://github.com/shihabal3amri/BYD-iOS/releases/download/v9.16.0-r2/BYD-iOS_9.16.0_r2.ipa">Download IPA · 339 MB</a>
   </div>
   <p class="note"><strong>AltStore Classic must already be installed and configured.</strong> Open this page in Safari on your iPhone. This project is free; initial AltStore setup still requires a computer. The downloaded IPA must be signed by an installer.</p>
   <section class="card" aria-labelledby="install-heading">
-    <h2 id="install-heading">Install the beta</h2>
+    <h2 id="install-heading">Install or update</h2>
     <ol>
       <li>Tap <strong>Add to AltStore Classic</strong> and confirm adding the source.</li>
-      <li>Find <strong>BYD Localized — Beta</strong> in AltStore, review permissions and install with your own Apple account.</li>
+      <li>Find <strong>BYD Localized</strong> in AltStore, review permissions and install with your own Apple account.</li>
       <li>Open BYD and sign in to your own BYD account. Go to <strong>Me → Settings</strong> to choose your language and bottom tabs.</li>
     </ol>
-    <p class="note">For normal AltStore Classic use, keep AltServer reachable through the same Wi-Fi network or USB. Free Apple-account signing needs refreshing within seven days. <a href="https://github.com/shihabal3amri/BYD-iOS#install-the-beta">Read the installation guide</a>.</p>
+    <p><strong>Already installed?</strong> Refresh the source in AltStore, then open <strong>My Apps → BYD → Update</strong>. Look for <strong>9.16.0 · Revision 2</strong>. Keep your existing app and use the same Apple account.</p>
+    <p class="note">For normal AltStore Classic use, keep AltServer reachable through the same Wi-Fi network or USB. Free Apple-account signing needs refreshing within seven days. <a href="https://github.com/shihabal3amri/BYD-iOS#install-or-update">Read the installation guide</a>.</p>
     <p><label for="source-url">If the button does not open AltStore, add this URL under <strong>Browse → Sources → +</strong>:</label></p>
     <textarea id="source-url" readonly spellcheck="false">https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/source.json</textarea>
     <div class="copyrow"><button type="button" class="button secondary" id="copy-source">Copy source URL</button><span id="copy-status" class="note" role="status" aria-live="polite"></span></div>
@@ -76,15 +77,15 @@
       <p class="note">Fully close and reopen BYD after changing language. Tab visibility changes immediately.</p>
     </section>
     <section class="card" aria-labelledby="status-heading">
-      <h2 id="status-heading">Help test the first release</h2>
-      <p>The underlying build was tested with Impactor. AltStore installation and this public package still need independent device testing.</p>
+      <h2 id="status-heading">Bluetooth badges restored</h2>
+      <p>Revision 2 restores Bluetooth badges on supported dashboard controls. The fix uses BYD’s original artwork and keeps connection and control logic unchanged. AltStore installation and startup were verified with the previous release on an iPhone XS.</p>
       <p class="note">Some Chinese content and artwork remain. The profile page may be blank. Wakeup unlock is not included. Other iPhones and iOS versions require testing.</p>
-      <a href="https://github.com/shihabal3amri/BYD-iOS/issues/new?template=beta-feedback.md">Send beta feedback →</a>
+      <a href="https://github.com/shihabal3amri/BYD-iOS/issues/new?template=beta-feedback.md">Report a problem →</a>
     </section>
   </div>
   <div class="screens"><img src="assets/language-en.png" alt="English language selection screen" width="1125" height="2436" loading="lazy"><img src="assets/language-ru.png" alt="Russian language selection screen" width="1125" height="2436" loading="lazy"></div>
   <footer>
-    <p><a href="https://github.com/shihabal3amri/BYD-iOS">Project &amp; instructions</a> · <a href="https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-beta.1">Release notes &amp; checksums</a> · <a href="https://faq.altstore.io/altstore-classic/how-to-install-altstore-macos">Set up AltStore</a></p>
+    <p><a href="https://github.com/shihabal3amri/BYD-iOS">Project &amp; instructions</a> · <a href="https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r2">Release notes &amp; checksums</a> · <a href="https://faq.altstore.io/altstore-classic/how-to-install-altstore-macos">Set up AltStore</a></p>
     <p>Unofficial project, not affiliated with or endorsed by BYD. BYD's original application and assets belong to their respective owners. Apple-restricted capabilities such as Wallet car keys, push notifications and Siri integration are not promised for this sideloaded build. This is an AltStore Classic source, not an AltStore PAL listing.</p>
   </footer>
 </main>

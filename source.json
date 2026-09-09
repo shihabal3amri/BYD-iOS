@@ -2,17 +2,17 @@
   "name": "BYD iOS Localized",
   "identifier": "io.github.shihabal3amri.byd-ios",
   "subtitle": "English · العربية · Русский",
-  "description": "Unofficial BYD iOS localization and navigation preferences. Public beta downloads for personal sideloading.",
+  "description": "Unofficial BYD iOS localization and navigation preferences. Free downloads for personal sideloading.",
   "iconURL": "https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/assets/icon.png",
   "website": "https://github.com/shihabal3amri/BYD-iOS",
   "tintColor": "#E60012",
   "apps": [
     {
-      "name": "BYD Localized — Beta",
+      "name": "BYD Localized",
       "bundleIdentifier": "com.byd.BYDi",
       "developerName": "shihabal3amri · unofficial localization",
       "subtitle": "English, Arabic and Russian + customizable tabs",
-      "localizedDescription": "Unofficial localized BYD 9.16.0 beta. Choose English, Arabic or Russian in Me → Settings → Language. Hide Discover, Mall and Service individually. My Car uses the original car icon. Fully close and reopen BYD after changing language.\n\nRequires AltStore Classic to be installed and configured; adding this source does not install AltStore. The app is re-signed with your own Apple account. This is not an AltStore PAL listing.\n\nThe underlying build was tested with Impactor. AltStore installation and other Apple accounts/iOS versions need beta testing. Chinese artwork and some live content remain untranslated. The profile page may be blank. Wakeup unlock is not included. Apple-restricted capabilities such as Wallet car keys and push notifications are not promised for this sideloaded build. Not affiliated with or endorsed by BYD.",
+      "localizedDescription": "Unofficial localized BYD 9.16.0. Choose English, Arabic or Russian in Me → Settings → Language. Hide Discover, Mall and Service individually. My Car uses the original car icon. Fully close and reopen BYD after changing language.\n\nRevision 2 restores the Bluetooth badges on supported dashboard controls.\n\nRequires AltStore Classic and AltServer to be configured. Install and update with your own Apple account. AltStore installation and startup have been verified on an iPhone XS; the maintainer reports successful testing on additional iPhones.\n\nSome Chinese artwork and live content remain untranslated. The profile page may be blank. Wakeup unlock is not included. Apple-restricted capabilities such as Wallet car keys and push notifications are not promised for this sideloaded build. Not affiliated with or endorsed by BYD.",
       "iconURL": "https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/assets/icon.png",
       "tintColor": "#E60012",
       "category": "utilities",
@@ -21,6 +21,16 @@
         "https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/assets/language-ru.png"
       ],
       "versions": [
+        {
+          "version": "9.16.0",
+          "buildVersion": "202608311148",
+          "marketingVersion": "9.16.0 · Revision 2",
+          "date": "2026-09-09T13:11:04.045956+00:00",
+          "localizedDescription": "Fixes missing Bluetooth badges on supported dashboard controls when the car is connected. Adds the existing BYD badge PNG at the resource path used by the dashboard. Bluetooth connection checks, control logic, translations and other app code are unchanged. Update your existing installation through AltStore.",
+          "downloadURL": "https://github.com/shihabal3amri/BYD-iOS/releases/download/v9.16.0-r2/BYD-iOS_9.16.0_r2.ipa",
+          "size": 339192518,
+          "minOSVersion": "15.0"
+        },
         {
           "version": "9.16.0",
           "buildVersion": "202608311147",
