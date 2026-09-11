@@ -1,5 +1,36 @@
 # Changes
 
+## 9.16.0 · Revision 3 — 11 September 2026
+
+Public beta · **9.16.0 · Revision 3** · build **202608311159**
+
+Adds optional **Walk-up unlock** and **Lock when walking away**, using your already activated BYD Bluetooth key. Includes English, Arabic and Russian settings, distance calibration, manual signal thresholds, optional background location and movement support, and local test logs with event marks and export.
+
+### Set up
+
+1. Confirm BYD's normal Bluetooth key and Lock/Unlock controls work for your car.
+2. Open **Me → Settings → Walk-up unlock → Choose your distances**. Measure both positions with the phone where you normally carry it, then save. Automatic actions are paused while calibration is open.
+3. Enable **Walk-up unlock** and, if wanted, **Lock when walking away**. These are off by default for new users. Begin testing away from the car, then approach and walk away; confirm the car's actual response.
+4. For locked-screen testing, enable **Background detection → Location support**, follow the location permission prompts, and use **Allow background location** when offered. **Movement hints** is optional and uses Motion & Fitness. Background support can increase battery use; no indefinite or overnight guarantee is made. Reopen BYD after restarting the phone or force-closing the app.
+
+### Test status and known issue
+
+The identical walk-up code completed **six unlocks and six locks on a stock iPhone 12 Pro Max**, including three of each during a recorded locked/background interval. Earlier iterations also worked on the jailbroken iPhone X. This is limited field testing, not validation of every phone, vehicle or overnight scenario.
+
+**One iPhone XS produced inconsistent signal readings, with an unintended indoor unlock reported during earlier testing. The inconsistent readings persisted after updating to iOS 18.7.10; the cause is unresolved, and a hardware fault has not been established.** If near/far readings overlap or an unintended action occurs, turn Walk-up unlock off and report it. Calibrate each phone separately; do not copy another phone's thresholds.
+
+In **Test logs**, enable recording before a test, mark important moments, and export afterward. Logs are optional and stored locally. Include phone model, iOS, vehicle model, thresholds, whether the screen was locked and what the car actually did in a [walk-up feedback report](https://github.com/shihabal3amri/BYD-iOS/issues/new?template=walkup-feedback.md). Review logs and screenshots before sharing; never post account credentials, keys, VINs or signing files.
+
+### Update
+
+With AltServer running and reachable, refresh the existing AltStore Classic source and choose **Update** for BYD in **My Apps**. Keep the installed app and use the same Apple account. Look for **9.16.0 · Revision 3**, build **202608311159**. Existing private-test settings are retained; default-off applies when no walk-up settings exist.
+
+The IPA contains the tested private revision 10 payload with only its build metadata incremented for this public update. It includes no personal signing profile or device data. AltStore re-signs it with your account. The public R3 AltStore update itself still awaits user confirmation.
+
+[Installation and setup guide](https://shihabal3amri.github.io/BYD-iOS/) · [العربية](https://shihabal3amri.github.io/BYD-iOS/ar/) · [Русский](https://shihabal3amri.github.io/BYD-iOS/ru/)
+
+Existing localization and dashboard badge features remain included. Some Chinese content and the shared blank profile page remain unresolved. Push notifications and other Apple-restricted capabilities remain unavailable or unverified for this sideloaded app.
+
 ## 9.16.0 · Revision 2 — 9 September 2026
 
 Bluetooth badges now appear on supported dashboard controls when the car is connected, including Lock, Windows, Engine Off and Trunk on the tested vehicle.

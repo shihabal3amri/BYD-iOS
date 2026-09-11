@@ -2,11 +2,11 @@
 
 [**English**](README.md) · [**العربية**](README.ar.md) · [**Русский**](README.ru.md)
 
-Unofficial localization and navigation preferences for the Chinese BYD iPhone app. **Public beta · Revision 2**, based on BYD **9.16.0**. No jailbreak required.
+Unofficial localization and navigation preferences for the Chinese BYD iPhone app. **Public beta · Revision 3**, based on BYD **9.16.0**. No jailbreak required.
 
 The [download page](https://shihabal3amri.github.io/BYD-iOS/) also has English, Arabic and Russian language buttons.
 
-[**Add to AltStore Classic**](https://shihabal3amri.github.io/BYD-iOS/) · [**Download the IPA**](https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r2) · [**Report a problem**](https://github.com/shihabal3amri/BYD-iOS/issues/new?template=beta-feedback.md)
+[**Add to AltStore Classic**](https://shihabal3amri.github.io/BYD-iOS/) · [**Download the IPA**](https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r3) · [**Report a problem**](https://github.com/shihabal3amri/BYD-iOS/issues/new?template=beta-feedback.md)
 
 **AltStore Classic must already be installed and configured.** This link adds the BYD catalogue; it does not install AltStore. There is no charge for this project or its downloads. This is not an AltStore PAL listing or a computer-free initial installation service.
 
@@ -43,7 +43,7 @@ The videos explain AltStore setup; screens and steps can vary by version. After 
 
 ### Updating an existing installation
 
-Open AltStore with AltServer running and reachable, let the source refresh, then choose **Update** for BYD under **My Apps**. Look for **9.16.0 · Revision 2** (build **202608311148**). Keep your existing app and use the same Apple account so its local data is retained. The IPA is about **339 MB**; download speed depends on your connection to GitHub.
+Open AltStore with AltServer running and reachable, let the source refresh, then choose **Update** for BYD under **My Apps**. Look for **9.16.0 · Revision 3** (build **202608311159**). Keep your existing app and use the same Apple account so its local data is retained. The IPA is about **339 MB**; download speed depends on your connection to GitHub.
 
 ### If AltStore Classic is already configured
 
@@ -72,17 +72,29 @@ The underlying build has been tested with **Impactor 2.5.0 (formerly PlumeImpact
 
 This IPA must be re-signed by an installer. Downloading it in Safari alone will not install it.
 
+## New: Walk-up unlock · optional beta
+
+Open **Me → Settings → Walk-up unlock**. Unlock as you approach and optionally lock when walking away, using your already activated BYD Bluetooth key. Automatic actions, location support, movement hints and test recording are **off by default for new users**. Private testers retain their saved settings.
+
+1. Confirm BYD’s normal Bluetooth Lock/Unlock works. Open **Choose your distances**, measure both positions with your phone where you normally carry it, then save. Automatic actions are paused while calibration is open.
+2. Enable **Walk-up unlock** and optionally **Lock when walking away**. Start away from the car, approach, then walk away and check what the car actually does. Calibrate every phone separately.
+3. For locked-screen use, open **Background detection → Location support**, follow the permission prompts and use **Allow background location** when offered. **Movement hints** is optional and requests Motion & Fitness. Reopen BYD after a phone restart or force-closing the app.
+
+Background support may increase battery use; uninterrupted or overnight operation is not guaranteed. This feature processes location on the phone and does not save or upload coordinates. Other BYD location features have their own settings.
+
+**Known XS issue:** one iPhone XS produced inconsistent signal readings, with an unintended indoor unlock reported during earlier testing. The inconsistent readings persisted after updating to iOS 18.7.10. The cause is unresolved; a hardware fault is not established. If near/far readings overlap or unintended actions occur, turn Walk-up unlock off and report it.
+
+For feedback, enable Test logs before testing, mark important moments and export afterward. Include your phone/iOS, vehicle model, thresholds, screen state and actual car response. Review logs before sharing publicly.
+
+[Report walk-up behavior](https://github.com/shihabal3amri/BYD-iOS/issues/new?template=walkup-feedback.md)
+
 ## Compatibility and current status
 
-- The package declares **iOS 15.0 or later** and targets iPhones. This is a packaging requirement, not a claim that every model or iOS release has been tested.
-- The underlying code has **203 prior offline checks**. An Impactor-signed predecessor was installed on an iPhone X with iOS 16.7.16 and an iPhone XS with iOS 17.6.1. The final language/tab runtime audit was performed on the iPhone X.
-- Normal public-source installation and startup through **AltStore Classic 2.2.2** were verified on an **iPhone XS / iOS 17.6.1**. The maintainer also reports successful tests on several other iPhones.
-- Revision 2’s Bluetooth badge fix was reproduced and verified on the jailbroken iPhone X. Revision 2 (build **202608311148**) was subsequently confirmed installed through AltStore on the stock iPhone XS, and its fresh launch was verified. The dashboard badges have not been separately rechecked on the XS after that update.
-- Revision 2 adds one existing BYD PNG at the dashboard’s expected resource path and increments the build number. Every other existing IPA entry, including all executable code and translations, is byte-identical to public beta 1. The public packaging keeps the executable's code/data sections and translation resources unchanged. It uses minimal sideloading entitlements, excludes personal provisioning profiles, and removes the old App Store model allow-list so newer iPhones can be tested.
-- Chinese promotional artwork, some live content, unvisited screens and the About-page version prefix remain translation work.
-- The profile page can show a blank screen. The same behavior was observed in the official iOS app and Android app; its cause remains unresolved.
-- **Wakeup unlock is not included** in this release.
-- Apple-restricted capabilities, including Wallet car keys, push notifications and Siri integration, are not promised for this sideloaded build. No claim is made that all vehicle functions have been validated on every account or vehicle.
+Adds optional Walk-up unlock. The identical tested module completed six unlocks and six locks on a stock iPhone 12 Pro Max, including three of each while locked and in the background. Earlier iterations worked on the jailbroken iPhone X. The public R3 AltStore update still awaits user confirmation.
+
+Requires iOS 15 or later. Testing does not yet cover every phone, vehicle or overnight scenario. The reported XS proximity issue remains unresolved. Some Chinese content and artwork remain; the profile page may be blank.
+
+Existing English, Arabic and Russian localization, configurable tabs and Bluetooth badges remain included. Some Chinese content and the shared blank profile page remain unresolved. Push notifications, Wallet car keys and other Apple-restricted capabilities are unavailable or unverified in this sideloaded app. Previous public-source installation and launch were verified through AltStore Classic on the XS.
 
 ## Testing and feedback
 
@@ -99,16 +111,16 @@ Please remove account details, phone numbers, VINs, location, device identifiers
 
 ## Downloads and verification
 
-The [release](https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r2) includes the IPA, **SHA256SUMS**, and **verification.json**. [release.json](release.json) records the same package hash and validation status. The download is re-signable and contains no personal developer provisioning profile or device login data.
+The [release](https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r3) includes the IPA, **SHA256SUMS**, and **verification.json**. [release.json](release.json) records the same package hash and validation status. The download is re-signable and contains no personal developer provisioning profile or device login data.
 
 Maintainers can check catalogue/package consistency with:
 
 ```sh
-python3 scripts/validate_source.py /path/to/BYD-iOS_9.16.0_r2.ipa
+python3 scripts/validate_source.py /path/to/BYD-iOS_9.16.0_r3.ipa
 ```
 
 ## Project status
 
 This repository is the public download catalogue and feedback tracker. It does not claim ownership of BYD's original application or assets, and it is not affiliated with or endorsed by BYD. No license to BYD's proprietary code is granted by this repository.
 
-The full translation goal remains active. Broader language review, remaining artwork and live content, and the later wakeup-unlock phase remain on the roadmap.
+The full translation goal remains active. Further language review, remaining content and broader walk-up beta testing continue.

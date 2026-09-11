@@ -12,6 +12,8 @@ assignees: ""
 **BYD public beta version:**
 **Selected language:**
 
+For walk-up calibration, signal readings or background behavior, use the dedicated **Walk-up unlock feedback** template.
+
 **What happened?**
 
 **Steps to reproduce:**
