@@ -11,8 +11,8 @@
       "name": "BYD Localized",
       "bundleIdentifier": "com.byd.BYDi",
       "developerName": "shihabal3amri · unofficial localization",
-      "subtitle": "English, Arabic, Russian + optional walk-up unlock",
-      "localizedDescription": "Unofficial localized BYD 9.16.0. Choose English, Arabic or Russian in Me → Settings → Language. Hide Discover, Mall and Service individually. My Car uses the original car icon. Includes dashboard Bluetooth badges.\n\nRevision 3 adds optional Walk-up unlock, walk-away locking, calibration, background location and movement support, and local test logs. Find it in Me → Settings → Walk-up unlock. A working activated BYD Bluetooth key is required. Automatic actions and background support are off by default for new users. Calibrate on your own phone, then test both foreground and locked-screen behavior. Background support may increase battery use.\n\nKnown beta issue: one iPhone XS showed inconsistent RSSI, persisting after an iOS update. An unintended indoor unlock was reported during earlier testing. Cause unresolved; hardware failure is not established. Turn this feature off if near/far readings overlap or unintended actions occur. The tested module worked on a stock iPhone 12 Pro Max, including locked/background cycles; all devices and overnight operation are not validated.\n\nRequires configured AltStore Classic and reachable AltServer for install, update and refresh with your own Apple account. Some Chinese artwork and live content remain; the profile page may be blank. Apple-restricted capabilities such as Wallet car keys and push notifications are not promised. Not affiliated with or endorsed by BYD.",
+      "subtitle": "English, Arabic, Russian · widgets + walk-up unlock",
+      "localizedDescription": "Revision 4 restores Home Screen and Lock Screen widgets, localizes their text, fixes widget control requests outside China’s time zone, and restores missing dashboard tile icons. Select Keep App Extensions when installing. BYD and its four extensions use five App IDs. Open BYD after updating and allow time for widgets to refresh.\n\nUnofficial localized BYD 9.16.0. Choose English, Arabic or Russian in Me → Settings → Language. Hide Discover, Mall and Service individually. My Car uses the original car icon. Includes dashboard Bluetooth badges.\n\nRevision 3 adds optional Walk-up unlock, walk-away locking, calibration, background location and movement support, and local test logs. Find it in Me → Settings → Walk-up unlock. A working activated BYD Bluetooth key is required. Automatic actions and background support are off by default for new users. Calibrate on your own phone, then test both foreground and locked-screen behavior. Background support may increase battery use.\n\nKnown beta issue: one iPhone XS showed inconsistent RSSI, persisting after an iOS update. An unintended indoor unlock was reported during earlier testing. Cause unresolved; hardware failure is not established. Turn this feature off if near/far readings overlap or unintended actions occur. The tested module worked on a stock iPhone 12 Pro Max, including locked/background cycles; all devices and overnight operation are not validated.\n\nRequires configured AltStore Classic and reachable AltServer for install, update and refresh with your own Apple account. Some Chinese artwork and live content remain; the profile page may be blank. Apple-restricted capabilities such as Wallet car keys and push notifications are not promised. Not affiliated with or endorsed by BYD.",
       "iconURL": "https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/assets/icon.png",
       "tintColor": "#E60012",
       "category": "utilities",
@@ -23,6 +23,16 @@
         "https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/assets/language-ru.png"
       ],
       "versions": [
+        {
+          "version": "9.16.0",
+          "buildVersion": "202608311171",
+          "marketingVersion": "9.16.0 · Revision 4",
+          "date": "2026-09-12T09:31:06.402713+00:00",
+          "localizedDescription": "Restores localized Home Screen and Lock Screen widgets, fixes widget command time-zone handling and missing tile icons, and corrects clipped mileage. Choose Keep App Extensions in AltStore. Open BYD after updating to refresh widgets. Includes the existing optional walk-up beta; its known XS proximity limitation remains.",
+          "downloadURL": "https://github.com/shihabal3amri/BYD-iOS/releases/download/v9.16.0-r4/BYD-iOS_9.16.0_r4.ipa",
+          "size": 348790669,
+          "minOSVersion": "15.0"
+        },
         {
           "version": "9.16.0",
           "buildVersion": "202608311159",

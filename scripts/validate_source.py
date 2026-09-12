@@ -72,6 +72,25 @@ if len(sys.argv) > 1:
         entitlements = get_entitlements(binary)
         assert set(entitlements) == set(app['appPermissions']['entitlements'])
         assert entitlements['com.apple.security.application-groups'] == ['group.com.byd.BYDi']
+        extensions = [n for n in archive.namelist() if '/PlugIns/' in n and n.count('/') == 4 and n.endswith('/Info.plist')]
+        assert len(extensions) == release.get('widget_extension_count', 0)
+        expected_ids = {'BYDSmallWidget', 'BYDLockScreenWidget', 'BYDWidgetDynamicPara', 'BYDLockScreenWidgetDynamicPara'}
+        actual_ids = set()
+        for path in extensions:
+            extension = plistlib.loads(archive.read(path))
+            assert extension['CFBundleVersion'] == info['CFBundleVersion']
+            assert extension['CFBundleShortVersionString'] == info['CFBundleShortVersionString']
+            assert extension['CFBundleDisplayName'] == 'BYD'
+            prefix = app['bundleIdentifier'] + '.'
+            assert extension['CFBundleIdentifier'].startswith(prefix)
+            actual_ids.add(extension['CFBundleIdentifier'][len(prefix):])
+            executable = path.rsplit('/', 1)[0] + '/' + extension['CFBundleExecutable']
+            permissions = get_entitlements(archive.read(executable))
+            assert permissions['com.apple.security.application-groups'] == ['group.com.byd.BYDi']
+            assert set(permissions) <= set(app['appPermissions']['entitlements'])
+            assert {k for k in extension if 'UsageDescription' in k} <= set(app['appPermissions']['privacy'])
+        if extensions:
+            assert actual_ids == expected_ids
         # AltStore appends the same team suffix to the app and its declared groups.
         for team in ['ABCDEFGHIJ', '0123456789']:
             signed_id = info['CFBundleIdentifier'] + '.' + team

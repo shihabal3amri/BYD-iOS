@@ -1,5 +1,22 @@
 # Changes
 
+## 9.16.0 · Revision 4 — 12 September 2026
+
+Public beta · **9.16.0 · Revision 4** · build **202608311171**
+
+- Restores Home Screen and Lock Screen widgets, including control icons and English, Arabic and Russian text.
+- Fixes widget command errors caused by the phone’s time zone, and displays update times locally.
+- Restores missing dashboard tile icons and fixes clipped widget mileage.
+- Improves widget refresh after updates and language changes. Removes the private test name and development logging.
+
+**Update:** refresh the existing AltStore Classic source, choose **Update** for BYD, and select **Keep App Extensions** when asked. Use the same Apple account and keep your installed app. Open BYD for about 30 seconds afterward; widgets may take time to refresh. The app and four extensions use five App IDs. [About AltStore App IDs](https://faq.altstore.io/altstore-classic/app-ids).
+
+Home widgets are available with the app on iOS 15 or later; Lock Screen widgets require iOS 16 or later. Widget data and controls were confirmed during private testing on a stock XS. The final mileage-spacing correction passed focused rendering checks in all three languages; the exact public build’s on-device update remains to be confirmed. Package checks verified all four extensions, shared-group declarations and absence of personal profiles or device data.
+
+The existing optional Walk-up unlock beta is included unchanged. Its previously reported XS proximity issue remains unresolved.
+
+[Install/update guide](https://shihabal3amri.github.io/BYD-iOS/) · [العربية](https://shihabal3amri.github.io/BYD-iOS/ar/) · [Русский](https://shihabal3amri.github.io/BYD-iOS/ru/)
+
 ## 9.16.0 · Revision 3 — 11 September 2026
 
 Public beta · **9.16.0 · Revision 3** · build **202608311159**
