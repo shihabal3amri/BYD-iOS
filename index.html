@@ -25,17 +25,17 @@
         <a href="ru/" lang="ru" hreflang="ru" dir="auto">Русский</a>
     </nav>
   </header>
-  <span class="badge">PUBLIC BETA · <bdi>9.16.0 · R4</bdi></span>
+  <span class="badge">PUBLIC BETA · <bdi>9.16.0 · R5</bdi></span>
   <h1>Your BYD app.<br>Your language.</h1>
   <p class="intro">The Chinese BYD iPhone app in English, Arabic and Russian, with your preferred bottom tabs, restored widgets and optional Walk-up unlock. Free to try, with no jailbreak required.</p>
   <div class="actions">
     <a class="button" id="add-source" href="altstore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2Fshihabal3amri%2FBYD-iOS%2Fmain%2Fsource.json">Add to AltStore Classic</a>
-    <a class="button secondary" id="download" href="https://github.com/shihabal3amri/BYD-iOS/releases/download/v9.16.0-r4/BYD-iOS_9.16.0_r4.ipa">Download IPA · 349 MB</a>
+    <a class="button secondary" id="download" href="https://github.com/shihabal3amri/BYD-iOS/releases/download/v9.16.0-r5/BYD-iOS_9.16.0_r5.ipa">Download IPA · 349 MB</a>
   </div>
   <p class="note"><strong>AltStore Classic must already be installed and configured.</strong> Open this page in Safari on your iPhone. Initial setup requires a Mac or Windows computer and your own Apple account. <a href="#altstore-setup">New to AltStore? Start here.</a></p>
   <section class="card" id="widgets" aria-labelledby="widgets-heading">
-    <h2 id="widgets-heading">New in Revision 4: widgets</h2>
-    <p>Home Screen and Lock Screen widgets are back, with English, Arabic and Russian text. Includes working control icons, local update times and fixes for missing dashboard tile icons.</p>
+    <h2 id="widgets-heading">New in Revision 5: startup stability</h2>
+    <p>Fixes a crash when BYD tries to cache a widget image but shared storage is unavailable. Improves compatibility with installers that rename app groups. Includes the localized Home Screen and Lock Screen widgets from Revision 4.</p>
     <p>When AltStore asks, choose <strong>Keep App Extensions</strong>. Open BYD after updating and leave it open for about 30 seconds, then add BYD widgets from the widget gallery. Existing widgets may take time to refresh; they follow your selected BYD language.</p>
     <p class="note">BYD includes four widget extensions: the app and extensions use five App IDs in total. Check available IDs in AltStore → My Apps → View App IDs. <a href="https://faq.altstore.io/altstore-classic/app-ids">AltStore explains the App ID limit.</a></p>
   </section>
@@ -74,7 +74,7 @@
       <li>Find <strong>BYD Localized</strong> in AltStore, review permissions and install with your own Apple account. When AltStore asks, choose <strong>Keep App Extensions</strong>.</li>
       <li>Open BYD and sign in to your own BYD account. Go to <strong>Me → Settings</strong> to choose your language and bottom tabs.</li>
     </ol>
-    <p><strong>Already installed?</strong> Refresh the source in AltStore, then choose <strong>Update</strong> for BYD under <strong>My Apps</strong>. Look for <strong>9.16.0 · Revision 4</strong>. Keep your existing app and use the same Apple account to preserve its local data.</p>
+    <p><strong>Already installed?</strong> Refresh the source in AltStore, then choose <strong>Update</strong> for BYD under <strong>My Apps</strong>. Look for <strong>9.16.0 · Revision 5</strong>. Keep your existing app and use the same Apple account to preserve its local data.</p>
     <p class="note">Keep AltServer running and reachable over the same Wi-Fi network or USB when installing, updating or refreshing. With a free Apple account, refresh both AltStore and BYD before their seven-day signing period expires. The download is about 349 MB; speed depends on your connection to GitHub. <a href="https://github.com/shihabal3amri/BYD-iOS/blob/main/README.md#install-or-update">Read the full guide</a>.</p>
     <p><label for="source-url">If the button does not open AltStore, add this URL under <strong>Browse → Sources → +</strong>:</label></p>
     <textarea id="source-url" dir="ltr" readonly spellcheck="false">https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/source.json</textarea>
@@ -92,8 +92,8 @@
       <p class="note">Fully close and reopen BYD after changing language. Tab visibility changes immediately; My Car and Me remain available.</p>
     </section>
     <section class="card" aria-labelledby="status-heading">
-      <h2 id="status-heading">Public beta · Revision 4</h2>
-      <p>Widget data, icons and controls were confirmed during private testing on a stock iPhone XS. Revision 4’s final mileage-spacing correction passed English, Arabic and Russian rendering checks. The exact public build still awaits an on-device update check.</p>
+      <h2 id="status-heading">Public beta · Revision 5</h2>
+      <p>The storage crash was reproduced and the fix passed focused macOS and iOS laboratory tests, including loading the complete production module without app-group entitlements. The exact R5 app still needs confirmation on affected non-jailbroken phones, including iOS 27 beta. An installation failure reported separately remains undiagnosed.</p>
       <p class="note">Requires iOS 15 or later. Testing does not yet cover every phone, vehicle or overnight scenario. The reported XS proximity issue remains unresolved. Some Chinese content and artwork remain; the profile page may be blank.</p>
       <a href="https://github.com/shihabal3amri/BYD-iOS/issues/new?template=beta-feedback.md">Report a problem</a>
     </section>
@@ -108,7 +108,7 @@
 </a></li></ul>
 </section>
   <footer>
-    <p><a href="https://github.com/shihabal3amri/BYD-iOS/blob/main/README.md">Project &amp; instructions</a> · <a href="https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r4">Release notes &amp; checksums</a> · <a href="#altstore-setup">Set up AltStore</a></p>
+    <p><a href="https://github.com/shihabal3amri/BYD-iOS/blob/main/README.md">Project &amp; instructions</a> · <a href="https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r5">Release notes &amp; checksums</a> · <a href="#altstore-setup">Set up AltStore</a></p>
     <p>Unofficial project, not affiliated with or endorsed by BYD. BYD’s original application and assets belong to their respective owners. Apple-restricted capabilities such as Wallet car keys, push notifications and Siri integration are not promised for this sideloaded build. This is an AltStore Classic source, not an AltStore PAL listing.</p>
   </footer>
 </main>

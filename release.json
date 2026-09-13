@@ -1,30 +1,41 @@
 {
-  "release": "v9.16.0-r4",
-  "file": "BYD-iOS_9.16.0_r4.ipa",
-  "sha256": "61668bafc4022ae144d970cdf72d0f527c39677a13afae14ff32ef0a4d381b1f",
-  "bytes": 348790669,
+  "release": "v9.16.0-r5",
+  "file": "BYD-iOS_9.16.0_r5.ipa",
+  "sha256": "7cb6d3d24ba05a218c8868eb0a42b108eb68a4d76178fc0fa64881e0fbed1453",
+  "bytes": 348817856,
   "base_version": "9.16.0",
-  "base_build": "202608311171",
+  "base_build": "202608311172",
   "upstream_build": "202608311147",
-  "previous_release": "v9.16.0-r3",
-  "tested_candidate_sha256": "719cb02d8dcdac32c528c55663f1da2f241f5ad2476c2ee214f8748e754f59a9",
-  "tested_candidate_build": "202608311170",
+  "previous_release": "v9.16.0-r4",
+  "previous_ipa_sha256": "61668bafc4022ae144d970cdf72d0f527c39677a13afae14ff32ef0a4d381b1f",
   "bundle_identifier_before_resigning": "com.byd.BYDi",
   "minimum_ios": "15.0",
   "zip_crc_verified": true,
   "widget_extension_count": 4,
-  "widget_module_sha256": "fb5687c9793f947b38d09369d44ebc045d2e2adc6e33767c950634ee10460d26",
+  "widget_module_sha256": "0bc10956456a538e0ba38f68fdefd9aa7e0e862dbd0e74d62d038887f8debf56",
   "widget_diagnostics_enabled": false,
   "embedded_mobileprovision_count": 0,
   "private_device_markers_absent": true,
   "device_data_and_lab_helpers_absent": true,
-  "changes_from_tested_candidate": [
-    "Home widget unit spacing preserves the native width; Lock Screen spacing retained",
-    "Widget development diagnostics disabled",
-    "Public BYD display name and incremented app/extension build numbers"
+  "changes_from_r4": [
+    "Resolve accessible signed app groups independently of the signed app identifier",
+    "Skip native widget image writes and directory creation when their path is unavailable",
+    "Increment app and four extension build numbers; retain BYD display name"
   ],
-  "native_executables_intents_assets_and_translation_resources_identical_to_test11": true,
-  "walkup_module_identical_to_r3": true,
+  "native_executables_intents_assets_and_translation_resources_identical_to_r4": true,
+  "walkup_module_identical_to_r4": true,
+  "changed_archive_entries": [
+    "Payload/比亚迪.app/Info.plist",
+    "Payload/比亚迪.app/Frameworks/BYDWidgetStorage.dylib",
+    "Payload/比亚迪.app/PlugIns/BYDSmallWidgetExtension.appex/Frameworks/BYDWidgetStorage.dylib",
+    "Payload/比亚迪.app/PlugIns/BYDSmallWidgetExtension.appex/Info.plist",
+    "Payload/比亚迪.app/PlugIns/BYDLockScreenWidgetExtension.appex/Frameworks/BYDWidgetStorage.dylib",
+    "Payload/比亚迪.app/PlugIns/BYDLockScreenWidgetExtension.appex/Info.plist",
+    "Payload/比亚迪.app/PlugIns/BYDWidgetDynamicPara.appex/Frameworks/BYDWidgetStorage.dylib",
+    "Payload/比亚迪.app/PlugIns/BYDWidgetDynamicPara.appex/Info.plist",
+    "Payload/比亚迪.app/PlugIns/BYDLockScreenWidgetDynamicPara.appex/Frameworks/BYDWidgetStorage.dylib",
+    "Payload/比亚迪.app/PlugIns/BYDLockScreenWidgetDynamicPara.appex/Info.plist"
+  ],
   "fresh_install_defaults": {
     "walkup_unlock": false,
     "walkaway_lock": false,
@@ -33,7 +44,8 @@
     "test_logging": false
   },
   "packaging": "Re-signable IPA with original app and extension identifiers and app-group entitlements. Keep all four app extensions when signing. No personal provisioning profile or device data.",
-  "validation": "The user confirmed widget data, icons and controls on stock iPhone XS in private tests. Test11 localized widgets but added spacing that clipped the top Home mileage. R4 restores native Home unit spacing while retaining the Lock Screen separator. Three-language SwiftUI display fixtures and package checks cover this change. Final R4 native-widget rendering and AltStore update are not yet confirmed on a device.",
+  "validation": "Focused regression tests reproduce the nil-path NSData exception and verify both image writers, signed-group variants, storage recovery and unchanged native-save inputs/bytes on macOS and in an iOS 16.7.16 laboratory harness. A separate iOS harness loads the complete production module and confirms its constructor installs the guards even without app-group entitlements. Package checks preserve every R4 entry except five widget modules and five build-number plists. The exact R5 app has not yet been installed or launched on a non-jailbroken device; fixes are not yet confirmed by the issue reporters or on iOS 27 beta.",
   "known_issue": "Inconsistent RSSI on one iPhone XS persists after iOS 18.7.10; an unintended indoor unlock was reported during earlier testing. Hardware cause is not established. Disable walk-up unlock if readings overlap between intended near and far positions or unintended actions occur.",
-  "generated_at": "2026-09-12T09:31:06.402713+00:00"
+  "installation_report_status": "Issue 5 shows an iOS installation failure; no installer diagnostic establishes its cause or a connection to the runtime image-storage crash.",
+  "generated_at": "2026-09-13T01:32:19.846482+00:00"
 }

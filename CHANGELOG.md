@@ -1,5 +1,23 @@
 # Changes
 
+## 9.16.0 · Revision 5 — 13 September 2026
+
+Public beta · **9.16.0 · Revision 5** · build **202608311172**
+
+- Fixes a startup/login crash when a widget image is saved without an available shared-storage path.
+- Resolves the accessible signed app group even when the installer names it differently from the app ID. If shared storage is unavailable, optional image caching returns a failure safely.
+- Includes all R4 widgets, English/Arabic/Russian translations and optional walk-up features. The app name remains **BYD**; the storage bug also existed before the rename.
+
+**Validation:** reproduced the `NSData writeToFile` exception and verified the guards, signed-group variants and normal saves on macOS and in an iOS 16.7.16 laboratory harness. A separate iOS test loaded the complete production module without app-group entitlements and passed. Package checks preserve all R4 contents except five storage-module copies and five build-number plists. The exact R5 app has not yet been installed or launched on a non-jailbroken phone, and reporter confirmation—including iOS 27 beta—is pending. The separate “Unable to install” report remains undiagnosed.
+
+**Update:** refresh the existing AltStore Classic source and choose **Update** for BYD. Keep the same Apple account, existing app and all four extensions. Widgets require working shared app-group permissions from the installer. Open BYD for about 30 seconds after updating.
+
+**العربية:** إصلاح انهيار التطبيق عند حفظ صور الويدجت إذا لم تتوفر مساحة التخزين المشتركة، وتحسين التوافق مع أسماء مجموعات التطبيق بعد التوقيع. يتضمن جميع ميزات R4. اجتاز اختبارات مركّزة، وما زال تأكيده على الهواتف المتأثرة دون جيلبريك معلقًا. حدّث من AltStore مع الاحتفاظ بالتطبيق وإضافاته وحساب Apple نفسه.
+
+**Русский:** исправлен сбой при сохранении изображений виджетов без доступного общего хранилища; улучшена обработка групп приложения после переподписания. Все функции R4 сохранены. Целевые тесты пройдены; подтверждение на затронутых телефонах без джейлбрейка ещё ожидается. Обновите BYD через AltStore, сохранив приложение, расширения и прежнюю учётную запись Apple.
+
+[Install/update guide](https://shihabal3amri.github.io/BYD-iOS/) · [العربية](https://shihabal3amri.github.io/BYD-iOS/ar/) · [Русский](https://shihabal3amri.github.io/BYD-iOS/ru/)
+
 ## 9.16.0 · Revision 4 — 12 September 2026
 
 Public beta · **9.16.0 · Revision 4** · build **202608311171**

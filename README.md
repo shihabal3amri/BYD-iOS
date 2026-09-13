@@ -2,17 +2,17 @@
 
 [**English**](README.md) · [**العربية**](README.ar.md) · [**Русский**](README.ru.md)
 
-Unofficial localization and navigation preferences for the Chinese BYD iPhone app. **Public beta · Revision 4**, based on BYD **9.16.0**. No jailbreak required.
+Unofficial localization and navigation preferences for the Chinese BYD iPhone app. **Public beta · Revision 5**, based on BYD **9.16.0**. No jailbreak required.
 
 The [download page](https://shihabal3amri.github.io/BYD-iOS/) also has English, Arabic and Russian language buttons.
 
-[**Add to AltStore Classic**](https://shihabal3amri.github.io/BYD-iOS/) · [**Download the IPA**](https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r4) · [**Report a problem**](https://github.com/shihabal3amri/BYD-iOS/issues/new?template=beta-feedback.md)
+[**Add to AltStore Classic**](https://shihabal3amri.github.io/BYD-iOS/) · [**Download the IPA**](https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r5) · [**Report a problem**](https://github.com/shihabal3amri/BYD-iOS/issues/new?template=beta-feedback.md)
 
 **AltStore Classic must already be installed and configured.** This link adds the BYD catalogue; it does not install AltStore. There is no charge for this project or its downloads. This is not an AltStore PAL listing or a computer-free initial installation service.
 
-## New in Revision 4: widgets
+## New in Revision 5: startup stability
 
-Home Screen and Lock Screen widgets are back, with English, Arabic and Russian text. Includes working control icons, local update times and fixes for missing dashboard tile icons.
+Fixes a crash when BYD tries to cache a widget image but shared storage is unavailable. Improves compatibility with installers that rename app groups. Includes the localized Home Screen and Lock Screen widgets from Revision 4.
 
 When AltStore asks, choose **Keep App Extensions**. Open BYD after updating and leave it open for about 30 seconds, then add BYD widgets from the widget gallery. Existing widgets may take time to refresh; they follow your selected BYD language.
 
@@ -51,7 +51,7 @@ The videos explain AltStore setup; screens and steps can vary by version. After 
 
 ### Updating an existing installation
 
-Open AltStore with AltServer running and reachable, let the source refresh, then choose **Update** for BYD under **My Apps**. Look for **9.16.0 · Revision 4** (build **202608311171**). Keep your existing app and use the same Apple account so its local data is retained. The IPA is about **349 MB**; download speed depends on your connection to GitHub.
+Open AltStore with AltServer running and reachable, let the source refresh, then choose **Update** for BYD under **My Apps**. Look for **9.16.0 · Revision 5** (build **202608311172**). Keep your existing app and use the same Apple account so its local data is retained. The IPA is about **349 MB**; download speed depends on your connection to GitHub.
 
 ### If AltStore Classic is already configured
 
@@ -90,7 +90,7 @@ For feedback, enable Test logs before testing, mark important moments and export
 
 ## Compatibility and current status
 
-Widget data, icons and controls were confirmed during private testing on a stock iPhone XS. Revision 4’s final mileage-spacing correction passed English, Arabic and Russian rendering checks. The exact public build still awaits an on-device update check.
+The storage crash was reproduced and the fix passed focused macOS and iOS laboratory tests, including loading the complete production module without app-group entitlements. The exact R5 app still needs confirmation on affected non-jailbroken phones, including iOS 27 beta. An installation failure reported separately remains undiagnosed.
 
 Requires iOS 15 or later. Testing does not yet cover every phone, vehicle or overnight scenario. The reported XS proximity issue remains unresolved. Some Chinese content and artwork remain; the profile page may be blank.
 
@@ -111,12 +111,12 @@ Please remove account details, phone numbers, VINs, location, device identifiers
 
 ## Downloads and verification
 
-The [release](https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r4) includes the IPA, **SHA256SUMS**, and **verification.json**. [release.json](release.json) records the same package hash and validation status. The download is re-signable and contains no personal developer provisioning profile or device login data.
+The [release](https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r5) includes the IPA, **SHA256SUMS**, and **verification.json**. [release.json](release.json) records the same package hash and validation status. The download is re-signable and contains no personal developer provisioning profile or device login data.
 
 Maintainers can check catalogue/package consistency with:
 
 ```sh
-python3 scripts/validate_source.py /path/to/BYD-iOS_9.16.0_r4.ipa
+python3 scripts/validate_source.py /path/to/BYD-iOS_9.16.0_r5.ipa
 ```
 
 ## Project status
