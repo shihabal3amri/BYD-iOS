@@ -79,5 +79,8 @@
   "widgets_intro_html": "Fixes a crash when BYD tries to cache a widget image but shared storage is unavailable. Improves compatibility with installers that rename app groups. Includes the localized Home Screen and Lock Screen widgets from Revision 4.",
   "widgets_install_html": "When AltStore asks, choose <strong>Keep App Extensions</strong>. Open BYD after updating and leave it open for about 30 seconds, then add BYD widgets from the widget gallery. Existing widgets may take time to refresh; they follow your selected BYD language.",
   "widgets_ids_html": "BYD includes four widget extensions: the app and extensions use five App IDs in total. Check available IDs in AltStore → My Apps → View App IDs. <a href=\"https://faq.altstore.io/altstore-classic/app-ids\">AltStore explains the App ID limit.</a>",
-  "feature_five": "Localized Home Screen and Lock Screen widgets."
+  "feature_five": "Localized Home Screen and Lock Screen widgets.",
+  "telegram_heading": "Get release updates",
+  "telegram_intro": "Subscribe to our Telegram channel and turn on notifications to hear when a new version is released.",
+  "telegram_subscribe": "Subscribe on Telegram"
 }
