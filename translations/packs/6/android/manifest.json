@@ -1,0 +1,1 @@
+{"engineMax":2,"engineMin":2,"files":[{"bytes":4979140,"path":"packs/6/android/payload.json","sha256":"c8a7466fc87f88be9ffc0b71b3c2f0e58e66c06094d720177cf83426fb4c2048"}],"platform":"android","revision":6,"schemaVersion":2,"signing":{"algorithm":"ecdsa-p256-sha256-der","keyId":"release-20260914"}}
