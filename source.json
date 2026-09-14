@@ -12,7 +12,7 @@
       "bundleIdentifier": "com.byd.BYDi",
       "developerName": "shihabal3amri · unofficial localization",
       "subtitle": "English, Arabic, Russian · widgets + walk-up unlock",
-      "localizedDescription": "Fixes a startup/login crash when widget image storage is unavailable. Resolves accessible signed app groups independently of the app ID and safely skips unavailable image caches. Includes all Revision 4 widgets, translations and optional walk-up features. Keep App Extensions when installing. Confirmation on affected phones is still pending.\n\nRevision 4 restores Home Screen and Lock Screen widgets, localizes their text, fixes widget control requests outside China’s time zone, and restores missing dashboard tile icons. Select Keep App Extensions when installing. BYD and its four extensions use five App IDs. Open BYD after updating and allow time for widgets to refresh.\n\nUnofficial localized BYD 9.16.0. Choose English, Arabic or Russian in Me → Settings → Language. Hide Discover, Mall and Service individually. My Car uses the original car icon. Includes dashboard Bluetooth badges.\n\nRevision 3 adds optional Walk-up unlock, walk-away locking, calibration, background location and movement support, and local test logs. Find it in Me → Settings → Walk-up unlock. A working activated BYD Bluetooth key is required. Automatic actions and background support are off by default for new users. Calibrate on your own phone, then test both foreground and locked-screen behavior. Background support may increase battery use.\n\nKnown beta issue: one iPhone XS showed inconsistent RSSI, persisting after an iOS update. An unintended indoor unlock was reported during earlier testing. Cause unresolved; hardware failure is not established. Turn this feature off if near/far readings overlap or unintended actions occur. The tested module worked on a stock iPhone 12 Pro Max, including locked/background cycles; all devices and overnight operation are not validated.\n\nRequires configured AltStore Classic and reachable AltServer for install, update and refresh with your own Apple account. Some Chinese artwork and live content remain; the profile page may be blank. Apple-restricted capabilities such as Wallet car keys and push notifications are not promised. Not affiliated with or endorsed by BYD.",
+      "localizedDescription": "Revision 6 adds Spanish and Simplified Chinese source mode, signed translation-pack downloads with manual control, and fixes for settings entries, dialogs and Home Screen shortcuts. Automatic translation updates default off. Fully close and reopen BYD to apply downloaded translations. Widgets retain bundled translations. Spanish is a draft; some Chinese artwork/live content remain.\n\nFixes a startup/login crash when widget image storage is unavailable. Resolves accessible signed app groups independently of the app ID and safely skips unavailable image caches. Includes all Revision 4 widgets, translations and optional walk-up features. Keep App Extensions when installing. Confirmation on affected phones is still pending.\n\nRevision 4 restores Home Screen and Lock Screen widgets, localizes their text, fixes widget control requests outside China’s time zone, and restores missing dashboard tile icons. Select Keep App Extensions when installing. BYD and its four extensions use five App IDs. Open BYD after updating and allow time for widgets to refresh.\n\nUnofficial localized BYD 9.16.0. Choose English, Arabic or Russian in Me → Settings → Language. Hide Discover, Mall and Service individually. My Car uses the original car icon. Includes dashboard Bluetooth badges.\n\nRevision 3 adds optional Walk-up unlock, walk-away locking, calibration, background location and movement support, and local test logs. Find it in Me → Settings → Walk-up unlock. A working activated BYD Bluetooth key is required. Automatic actions and background support are off by default for new users. Calibrate on your own phone, then test both foreground and locked-screen behavior. Background support may increase battery use.\n\nKnown beta issue: one iPhone XS showed inconsistent RSSI, persisting after an iOS update. An unintended indoor unlock was reported during earlier testing. Cause unresolved; hardware failure is not established. Turn this feature off if near/far readings overlap or unintended actions occur. The tested module worked on a stock iPhone 12 Pro Max, including locked/background cycles; all devices and overnight operation are not validated.\n\nRequires configured AltStore Classic and reachable AltServer for install, update and refresh with your own Apple account. Some Chinese artwork and live content remain; the profile page may be blank. Apple-restricted capabilities such as Wallet car keys and push notifications are not promised. Not affiliated with or endorsed by BYD.",
       "iconURL": "https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/assets/icon.png",
       "tintColor": "#E60012",
       "category": "utilities",
@@ -23,6 +23,16 @@
         "https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/assets/language-ru.png"
       ],
       "versions": [
+        {
+          "version": "9.16.0",
+          "buildVersion": "202608311189",
+          "marketingVersion": "9.16.0 · Revision 6",
+          "date": "2026-09-14T10:55:53.243223+00:00",
+          "localizedDescription": "Adds Spanish and Simplified Chinese, signed translation-pack downloads with manual control, and fixes missing settings entries, dialog text and Home Screen shortcut titles. Automatic translation updates are off by default. Keep all app extensions when installing. Some translations/artwork remain incomplete; Spanish is a draft.",
+          "downloadURL": "https://github.com/shihabal3amri/BYD-iOS/releases/download/v9.16.0-r6/BYD-iOS_9.16.0_r6.ipa",
+          "size": 350614617,
+          "minOSVersion": "15.0"
+        },
         {
           "version": "9.16.0",
           "buildVersion": "202608311172",
@@ -79,21 +89,21 @@
           "com.apple.security.application-groups"
         ],
         "privacy": {
-          "NSBluetoothAlwaysUsageDescription": "我们需要使用您的蓝牙来实现蓝牙控制车辆功能、连接ETC蓝牙进行激活、控制智能设备、连接卫星通信设备",
-          "NSBluetoothPeripheralUsageDescription": "我们需要使用您的蓝牙来实现蓝牙控制车辆功能、连接ETC蓝牙进行激活、控制智能设备、连接卫星通信设备",
-          "NSCameraUsageDescription": "我们想访问您的相机，用于社区发帖拍摄照片或视频、扫码登录车机、修改头像、与服务顾问聊天时拍摄和发送图片或视频、拍照上传反馈问题的图片、拍照上传申请退款的图片、AR识别车辆",
-          "NSContactsUsageDescription": "我们想访问您的通讯录，用于新建授权用户时选择通讯录中的手机号",
-          "NSFaceIDUsageDescription": "我们需要使用您的面容 ID，用于车辆控制功能，替代输入操作密码",
-          "NSLocalNetworkUsageDescription": "我们想访问您的本地网络，用于手机app与pad端进行镜像传输",
-          "NSLocationAlwaysAndWhenInUseUsageDescription": "我们想访问您的位置，用于在地图上展示、寻车、收藏地点、搜索周边服务店/充电桩/加油站/停车场/洗车店/目的地、展示发帖位置、展示救援地点、与服务顾问聊天时发送位置、为您提供附近的车主服务、远程控制车载无人机时需要定位服务辅助、购车咨询服务、卫星通信模块获取坐标信息 Optional walk-up unlock uses on-device location updates to notice movement and support Bluetooth detection while the screen is locked. This optional feature does not store or upload coordinates and may increase battery use.",
-          "NSLocationTemporaryUsageDescriptionDictionary": "PurposeKey: 需要您的精确位置以准确地在地图上显示您的具体位置\nPurposeKeyFavorite: 添加当前位置为收藏需要使用您的精确位置\nPurposeKeyGameControls: 需要您的精确位置以获取当前App所连WiFi的SSID\nPurposeKeyMirrorControls: 需要您的精确位置以获取当前App所连WiFi的SSID\nPurposeKeyUAVControls: 需要你的精确位置用于远程控制车载无人机时的定位辅助，以提供更精准的服务。",
-          "NSLocationUsageDescription": "我们想访问您的位置，用于在地图上展示、寻车、收藏地点、搜索周边服务店/充电桩/加油站/停车场/洗车店/目的地、展示发帖位置、展示救援地点、与服务顾问聊天时发送位置、为您提供附近的车主服务、远程控制车载无人机时需要定位服务辅助、购车咨询服务、卫星通信模块获取坐标信息",
-          "NSLocationWhenInUseUsageDescription": "我们想访问您的位置，用于在地图上展示、寻车、收藏地点、搜索周边服务店/充电桩/加油站/停车场/洗车店/目的地、展示发帖位置、展示救援地点、与服务顾问聊天时发送位置、为您提供附近的车主服务、远程控制车载无人机时需要定位服务辅助、购车咨询服务、卫星通信模块获取坐标信息 Optional walk-up unlock uses on-device location updates to notice movement and support Bluetooth detection while the screen is locked. This optional feature does not store or upload coordinates and may increase battery use.",
-          "NSMicrophoneUsageDescription": "我们想访问您的麦克风，用于发帖拍摄视频、在线客服拍摄视频和使用卫星通话服务",
-          "NSMotionUsageDescription": " Optional walk-up unlock uses Motion & Fitness to notice movement and briefly speed up Bluetooth detection. Movement is processed on this iPhone; optional diagnostics record detection events.",
-          "NSPhotoLibraryAddUsageDescription": "我们想访问您的照片与视频，用于社区发帖上传您选择的图片或视频、选择本地图片扫码登录车机、修改头像、与服务顾问聊天时发送图片或视频、分享图片内容、上传反馈问题的图片、上传申请退款的图片、保存千里眼的截图或录像和远程自定义车机壁纸",
-          "NSPhotoLibraryUsageDescription": "我们想访问您的照片与视频，用于社区发帖上传您选择的图片或视频、选择本地图片扫码登录车机、修改头像、与服务顾问聊天时发送图片或视频、分享图片内容、上传反馈问题的图片、上传申请退款的图片、保存千里眼的截图或录像和远程自定义车机壁纸",
-          "NSSiriUsageDescription": "您的部分“比亚迪”数据将发给Apple以处理您的请求，如果不允许，您将无法使用Siri唤起比亚迪App"
+          "NSBluetoothAlwaysUsageDescription": "BYD uses Bluetooth to control your vehicle, activate ETC toll devices, control smart devices and connect satellite communication equipment.",
+          "NSBluetoothPeripheralUsageDescription": "BYD uses Bluetooth to control your vehicle, activate ETC toll devices, control smart devices and connect satellite communication equipment.",
+          "NSCameraUsageDescription": "BYD uses the camera for photos and videos in posts and adviser chats, QR login, profile photos, issue and refund images, and AR vehicle recognition.",
+          "NSContactsUsageDescription": "BYD uses contacts to choose a phone number when adding an authorized user.",
+          "NSFaceIDUsageDescription": "BYD uses Face ID instead of your operation password to authorize vehicle controls.",
+          "NSLocalNetworkUsageDescription": "BYD uses your local network to mirror the phone app to a tablet.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "BYD uses location for maps, finding your car and nearby places, saved places, posts, roadside assistance, adviser chats, owner and purchase services, drone positioning and satellite coordinates. Optional walk-up unlock also uses location in the background to assist Bluetooth detection; that feature does not store or upload coordinates. It may increase battery use.",
+          "NSLocationTemporaryUsageDescriptionDictionary": "BYD needs your precise location to show your position accurately on the map.; BYD needs your precise location to save your current position as a favorite.; BYD needs precise location permission to read the name of the connected Wi-Fi network.; BYD needs precise location permission to read the name of the connected Wi-Fi network.; BYD needs your precise location to assist positioning when remotely controlling the vehicle drone.",
+          "NSLocationUsageDescription": "BYD uses location for maps, finding your car and nearby places, saved places, posts, roadside assistance, adviser chats, owner and purchase services, drone positioning and satellite coordinates.",
+          "NSLocationWhenInUseUsageDescription": "BYD uses location for maps, finding your car and nearby places, saved places, posts, roadside assistance, adviser chats, owner and purchase services, drone positioning and satellite coordinates. Optional walk-up unlock also uses location in the background to assist Bluetooth detection; that feature does not store or upload coordinates. It may increase battery use.",
+          "NSMicrophoneUsageDescription": "BYD uses the microphone for videos in posts and customer service chats, and for satellite calls.",
+          "NSMotionUsageDescription": "Optional walk-up unlock uses motion to detect movement and briefly speed up Bluetooth detection. Movement is processed on this iPhone; optional diagnostics record detection events.",
+          "NSPhotoLibraryAddUsageDescription": "BYD accesses photos and videos for posts, QR login, your profile, adviser chats, sharing, issue and refund images, saving remote-camera captures, and custom vehicle wallpapers.",
+          "NSPhotoLibraryUsageDescription": "BYD accesses photos and videos for posts, QR login, your profile, adviser chats, sharing, issue and refund images, saving remote-camera captures, and custom vehicle wallpapers.",
+          "NSSiriUsageDescription": "Some BYD data is sent to Apple to process your Siri requests. Without permission, Siri cannot open the BYD app."
         }
       }
     }

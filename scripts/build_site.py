@@ -1,4 +1,4 @@
-"""Render the three static GitHub Pages languages; --check detects stale output."""
+"""Render the five static GitHub Pages languages; --check detects stale output."""
 import argparse
 import html
 from html import escape
@@ -7,7 +7,7 @@ from pathlib import Path
 from string import Template
 
 ROOT = Path(__file__).resolve().parents[1]
-LANGUAGES = {'en': 'English', 'ar': 'العربية', 'ru': 'Русский'}
+LANGUAGES = {'en': 'English', 'ar': 'العربية', 'ru': 'Русский', 'es': 'Español', 'zh-Hans': '简体中文'}
 SITE = 'https://shihabal3amri.github.io/BYD-iOS/'
 REPO = 'https://github.com/shihabal3amri/BYD-iOS'
 
@@ -74,4 +74,4 @@ if __name__ == '__main__':
         else:
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(rendered)
-    print('PASS: English, Arabic and Russian pages are current' if args.check else 'Built English, Arabic and Russian pages')
+    print('PASS: English, Arabic, Russian, Spanish and Simplified Chinese pages are current' if args.check else 'Built English, Arabic, Russian, Spanish and Simplified Chinese pages')

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="支持英语、阿拉伯语、俄语、西班牙语和简体中文的 BYD iPhone 应用。提供翻译更新和小组件，通过 AltStore Classic 安装，无需越狱。">
+  <meta name="theme-color" content="#e60012">
+  <title>BYD iOS 多语言版 · 公开测试</title>
+  <link rel="icon" href="../assets/icon.png">
+  <link rel="stylesheet" href="../assets/site.css">
+  <link rel="canonical" href="https://shihabal3amri.github.io/BYD-iOS/zh-Hans/">
+  <link rel="alternate" hreflang="en" href="https://shihabal3amri.github.io/BYD-iOS/">
+  <link rel="alternate" hreflang="ar" href="https://shihabal3amri.github.io/BYD-iOS/ar/">
+  <link rel="alternate" hreflang="ru" href="https://shihabal3amri.github.io/BYD-iOS/ru/">
+  <link rel="alternate" hreflang="es" href="https://shihabal3amri.github.io/BYD-iOS/es/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://shihabal3amri.github.io/BYD-iOS/zh-Hans/">
+  <link rel="alternate" hreflang="x-default" href="https://shihabal3amri.github.io/BYD-iOS/">
+  <script defer src="../assets/site.js"></script>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand"><img src="../assets/icon.png" width="64" height="64" alt="BYD 应用图标"><div><strong dir="ltr">BYD iOS Localized</strong><p>非官方社区项目</p></div></div>
+    <nav class="languages" aria-label="网页语言">
+        <a href=".././" lang="en" hreflang="en" dir="auto">English</a>
+        <a href="../ar/" lang="ar" hreflang="ar" dir="auto">العربية</a>
+        <a href="../ru/" lang="ru" hreflang="ru" dir="auto">Русский</a>
+        <a href="../es/" lang="es" hreflang="es" dir="auto">Español</a>
+        <a href="../zh-Hans/" lang="zh-Hans" hreflang="zh-Hans" dir="auto" aria-current="page">简体中文</a>
+    </nav>
+  </header>
+  <span class="badge">公开测试 · <bdi>9.16.0 · R6</bdi></span>
+  <h1>您的 BYD 应用。<br>您的语言。</h1>
+  <p class="intro">中国版 BYD iPhone 应用现支持英语、阿拉伯语、俄语、西班牙语和简体中文。包含翻译更新、自定义底部标签栏、小组件和可选的靠近解锁功能。西班牙语翻译仍在审校中。选择简体中文会保留原文。</p>
+  <div class="actions">
+    <a class="button" id="add-source" href="altstore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2Fshihabal3amri%2FBYD-iOS%2Fmain%2Fsource.json">添加至 AltStore Classic</a>
+    <a class="button secondary" id="download" href="https://github.com/shihabal3amri/BYD-iOS/releases/download/v9.16.0-r6/BYD-iOS_9.16.0_r6.ipa">下载 IPA · 351 MB</a>
+  </div>
+  <p class="note"><strong>请先安装并配置 AltStore Classic。</strong> 在 iPhone 的 Safari 中打开本页。首次设置需要 Mac 或 Windows 电脑以及您自己的 Apple 账户。 <a href="#altstore-setup">首次使用 AltStore？从这里开始。</a></p>
+  <section class="card release-updates" aria-labelledby="release-updates-heading">
+    <div>
+      <h2 id="release-updates-heading">接收版本更新通知</h2>
+      <p>订阅 Telegram 频道并开启通知，及时了解新版本。</p>
+    </div>
+    <a class="button secondary" href="https://t.me/byd_localized" target="_blank" rel="noopener noreferrer">订阅 Telegram</a>
+  </section>
+  <section class="card" id="widgets" aria-labelledby="widgets-heading">
+    <h2 id="widgets-heading">修订版 6 新增：语言与翻译更新</h2>
+    <p>新增西班牙语和简体中文、签名翻译包下载，并修复设置项、对话框和主屏幕快捷操作标题的翻译。在<strong>设置 → 翻译</strong>中可手动更新，自动更新默认关闭。完全关闭并重新打开 BYD 后生效。</p>
+    <p>安装时选择 <strong>Keep App Extensions</strong>。更新后打开 BYD 约 30 秒，再从小组件库添加 BYD。小组件跟随所选语言，但翻译仍包含在 IPA 中。</p>
+    <p class="note">BYD 包含四个小组件扩展，连同主应用共使用五个 App ID。可在 AltStore → My Apps → View App IDs 查看剩余额度。<a href="https://faq.altstore.io/altstore-classic/app-ids">了解 App ID 限制。</a></p>
+  </section>
+  <section class="card" id="walkup-setup" aria-labelledby="walkup-heading">
+    <h2 id="walkup-heading">靠近解锁 · 可选测试功能</h2>
+    <p>打开<strong>我的 → 设置 → 靠近解锁</strong>。使用已激活的 BYD 蓝牙钥匙，在靠近时解锁，并可选择离开时上锁。新用户的自动操作、位置支持、运动提示和测试记录均<strong>默认关闭</strong>。已有测试用户保留保存的设置。</p>
+    <ol><li>先确认 BYD 原有蓝牙上锁和解锁正常。打开<strong>选择距离</strong>，按日常携带方式放置手机，在两个位置测量并保存。校准期间暂停自动操作。</li><li>开启<strong>靠近解锁</strong>，按需开启<strong>离开时上锁</strong>。从远离车辆的位置开始，靠近再离开，检查车辆的实际响应。每部手机应单独校准。</li><li>需要锁屏使用时，打开<strong>后台检测 → 位置支持</strong>，按照提示授权，并在系统提供时允许后台定位。<strong>运动提示</strong>为可选功能，需要运动与健身权限。重启手机或强制关闭应用后，请重新打开 BYD。</li></ol>
+    <p class="note">后台支持可能增加耗电，不能保证持续或整夜运行。此功能在手机本地处理位置，不保存或上传坐标。BYD 其他位置功能有各自的设置。</p>
+    <p><strong>已知 XS 问题：</strong>一部 iPhone XS 的信号读数不稳定，早期测试中曾报告在室内意外解锁。更新至 iOS 18.7.10 后仍存在。原因尚未确定，不能认定为硬件故障。如果远近读数重叠或出现意外操作，请关闭此功能并反馈。</p>
+    <p class="note">反馈前可开启测试记录、标记重要时刻，并在结束后导出。请注明手机及 iOS、车型、阈值、屏幕状态和车辆实际响应。公开分享前请检查日志。</p>
+    <a href="https://github.com/shihabal3amri/BYD-iOS/issues/new?template=walkup-feedback.md">反馈靠近解锁行为</a>
+  </section>
+  <section class="gallery" aria-labelledby="screenshots-heading">
+    <h2 id="screenshots-heading">应用界面</h2>
+    <p class="note">以下是早期版本的真实 iPhone 截图，点击可查看大图。</p>
+    <div class="screens">
+      <figure><a href="../assets/dashboard-r2.png"><img src="../assets/dashboard-r2.png" alt="带蓝牙控制标识的英文“我的车辆”页面" width="1125" height="2436" loading="lazy"></a><figcaption><strong>我的车辆 · 修订版 2</strong>支持的控制项显示蓝牙标识。</figcaption></figure>
+      <figure><a href="../assets/language-en.png"><img src="../assets/language-en.png" alt="早期版本的语言选择界面，当前选择英语" width="1125" height="2436" loading="lazy"></a><figcaption><strong>选择您的语言</strong>现已加入西班牙语和简体中文。</figcaption></figure>
+      <figure><a href="../assets/bottom-bar-ar.png"><img src="../assets/bottom-bar-ar.png" alt="阿拉伯语底部标签栏设置" width="1125" height="2436" loading="lazy"></a><figcaption><strong>为我的车辆留出空间</strong>显示或隐藏可选标签。</figcaption></figure>
+      <figure><a href="../assets/language-ru.png"><img src="../assets/language-ru.png" alt="选择俄语的语言设置界面" width="1125" height="2436" loading="lazy"></a><figcaption><strong>使用俄语</strong>俄语语言设置。</figcaption></figure>
+    </div>
+  </section>
+  <section class="card" id="altstore-setup" aria-labelledby="setup-heading">
+    <h2 id="setup-heading">1. 设置 AltStore Classic</h2>
+    <p>如果已安装 AltStore Classic，请继续下一步。否则，先在电脑上安装 <strong>AltServer</strong>，再通过它在 iPhone 上安装 <strong>AltStore Classic</strong>。使用您自己的 Apple 账户，无需付费开发者会员。iOS 16 及以上需开启开发者模式。</p>
+    <div class="tutorials">
+      <a class="tutorial" href="https://youtu.be/05xOiC5TwQ8?si=iv-KIpAl5oyJoKnP"><strong>AltStore 教程 · 阿拉伯语</strong><span>在 YouTube 观看 ↗</span></a>
+      <a class="tutorial" href="https://youtu.be/yLuyVakPpUM?si=QloJ8z-acfZEbB4v"><strong>AltStore 教程 · 英语</strong><span>在 YouTube 观看 ↗</span></a>
+    </div>
+    <p class="note">视频介绍初始设置。不同版本的界面和步骤可能有变化，请参考最新官方指南： <a href="https://faq.altstore.io/altstore-classic/how-to-install-altstore-macos">macOS 指南</a> · <a href="https://faq.altstore.io/altstore-classic/how-to-install-altstore-windows">Windows 指南</a>.</p>
+  </section>
+  <section class="card" aria-labelledby="install-heading">
+    <h2 id="install-heading">2. 安装或更新 BYD</h2>
+    <ol>
+      <li>点击上方的<strong>添加至 AltStore Classic</strong>，并确认添加软件源。</li>
+      <li>在 AltStore 中找到 <strong>BYD Localized</strong>，查看权限并使用您自己的 Apple 账户安装。出现提示时选择 <strong>Keep App Extensions</strong>（保留应用扩展）。</li>
+      <li>打开 BYD 并登录您自己的账户。在<strong>我的 → 设置</strong>中选择语言和底部标签。</li>
+    </ol>
+    <p><strong>已经安装？</strong>刷新 AltStore 软件源，在 <strong>My Apps</strong> 中选择 BYD 的 <strong>Update</strong>。版本应为 <strong>9.16.0 · 修订版 6</strong>。保留现有应用并使用同一 Apple 账户，以保留本地数据。</p>
+    <p class="note">安装、更新或续签时，请保持 AltServer 运行，并通过同一 Wi-Fi 或 USB 连接。免费 Apple 账户需在七天签名有效期结束前为 AltStore 和 BYD 续签。下载约为 351 MB，速度取决于您与 GitHub 的连接。 <a href="https://github.com/shihabal3amri/BYD-iOS/blob/main/README.zh-Hans.md#install-or-update">阅读完整指南</a>.</p>
+    <p><label for="source-url">如果按钮无法打开 AltStore，请在 <strong>Browse → Sources → +</strong> 中添加以下地址：</label></p>
+    <textarea id="source-url" dir="ltr" readonly spellcheck="false">https://raw.githubusercontent.com/shihabal3amri/BYD-iOS/main/source.json</textarea>
+    <div class="copyrow"><button type="button" class="button secondary" id="copy-source" data-success="已复制地址。" data-fallback="请选中并复制上方地址。">复制软件源地址</button><span id="copy-status" class="note" role="status" aria-live="polite"></span></div>
+  </section>
+  <section class="card" aria-labelledby="impactor-heading">
+    <h2 id="impactor-heading">通过 Impactor 安装</h2>
+    <p>将 IPA 导入 <a href="https://github.com/claration/Impactor">Impactor</a>，应用名称保持为 <strong>BYD</strong>，并保留所有小组件扩展。使用您自己的 Apple 账户签名并安装。</p>
+    <p class="note">若出现与 <strong>appIdName</strong> 有关的 <strong>Developer API error 35</strong>，请将名称设为 BYD，然后使用同一 IPA 重试。保留默认应用标识和应用组处理方式。仅下载 IPA 并不会完成安装。 <a href="https://github.com/shihabal3amri/BYD-iOS/blob/main/README.zh-Hans.md#install-using-impactor">阅读 Impactor 安装说明</a>.</p>
+  </section>
+  <div class="grid">
+    <section class="card" aria-labelledby="features-heading">
+      <h2 id="features-heading">按您的习惯设置</h2>
+      <ul><li>选择英语、阿拉伯语、俄语、西班牙语或简体中文。</li><li>分别隐藏发现、商城和服务标签。</li><li>使用原有车辆图标找到我的车辆。</li><li>可选的靠近解锁和离开上锁，支持校准与本地测试记录。</li><li>支持多语言的主屏幕与锁屏小组件。</li></ul>
+      <p class="note">切换语言或下载翻译后，请完全关闭 BYD 再重新打开。标签显示设置即时生效，我的车辆和我的始终保留。</p>
+    </section>
+    <section class="card" aria-labelledby="status-heading">
+      <h2 id="status-heading">公开测试 · 修订版 6</h2>
+      <p>已在 iPhone X 和 Android 上验证签名翻译包更新。快捷操作适配器通过了 145 项真实 UIKit 对象检查，现有回归检查也已通过。当前生产安装包尚未在未越狱 iPhone 上完成安装验证。</p>
+      <p class="note">需要 iOS 15 或更新版本。西班牙语仍在审校，部分动态内容和图片仍为中文。小组件翻译随应用包更新。已报告的 XS 靠近解锁问题仍未解决，个人资料页也可能为空白。</p>
+      <a href="https://github.com/shihabal3amri/BYD-iOS/issues/new?template=beta-feedback.md">报告问题</a>
+    </section>
+  </div>
+  <section class="supporters" id="supporters" aria-labelledby="supporters-heading">
+<h2 id="supporters-heading">支持我们的社区</h2>
+<p>感谢各社区对本项目的支持。</p>
+<ul class="supporter-list"><li><a class="supporter" href="https://linktr.ee/BYD.ARAB" target="_blank" rel="noopener noreferrer">
+<img class="supporter-logo" src="../assets/byd-arab.png" width="571" height="437" alt="BYD العرب" loading="lazy">
+<div class="supporter-info"><span class="supporter-label">支持社区</span><h3><bdi dir="ltr">BYD العرب</bdi></h3></div>
+<span class="supporter-follow">关注社区<span aria-hidden="true">↗</span></span>
+</a></li></ul>
+</section>
+  <footer>
+    <p><a href="https://github.com/shihabal3amri/BYD-iOS/blob/main/README.zh-Hans.md">项目与说明</a> · <a href="https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r6">更新说明与校验值</a> · <a href="#altstore-setup">设置 AltStore</a></p>
+    <p>本项目为非官方项目，与比亚迪无隶属关系，也未获得其认可。原版应用及资源属于各自所有者。不保证侧载版本支持受 Apple 限制的 Wallet 车钥匙、推送通知或 Siri 等功能。本软件源用于 AltStore Classic，并非 AltStore PAL。</p>
+  </footer>
+</main>
+</body>
+</html>

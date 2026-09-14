@@ -1,51 +1,41 @@
 {
-  "release": "v9.16.0-r5",
-  "file": "BYD-iOS_9.16.0_r5.ipa",
-  "sha256": "7cb6d3d24ba05a218c8868eb0a42b108eb68a4d76178fc0fa64881e0fbed1453",
-  "bytes": 348817856,
+  "release": "v9.16.0-r6",
+  "file": "BYD-iOS_9.16.0_r6.ipa",
+  "sha256": "9264280e225c61d1a115211433aa10e9b37aec5d4f94bc6fd7ae446aab36ec04",
+  "bytes": 350614617,
   "base_version": "9.16.0",
-  "base_build": "202608311172",
+  "base_build": "202608311189",
   "upstream_build": "202608311147",
-  "previous_release": "v9.16.0-r4",
-  "previous_ipa_sha256": "61668bafc4022ae144d970cdf72d0f527c39677a13afae14ff32ef0a4d381b1f",
+  "previous_release": "v9.16.0-r5",
   "bundle_identifier_before_resigning": "com.byd.BYDi",
   "minimum_ios": "15.0",
-  "zip_crc_verified": true,
   "widget_extension_count": 4,
-  "widget_module_sha256": "0bc10956456a538e0ba38f68fdefd9aa7e0e862dbd0e74d62d038887f8debf56",
-  "widget_diagnostics_enabled": false,
+  "widget_module_sha256": "aa4978f2fcd6da5451768578d5466d2e598565e997830552d7efd8916c83c960",
   "embedded_mobileprovision_count": 0,
   "private_device_markers_absent": true,
   "device_data_and_lab_helpers_absent": true,
-  "changes_from_r4": [
-    "Resolve accessible signed app groups independently of the signed app identifier",
-    "Skip native widget image writes and directory creation when their path is unavailable",
-    "Increment app and four extension build numbers; retain BYD display name"
+  "languages": [
+    "en",
+    "ar",
+    "ru",
+    "es",
+    "zh-Hans"
   ],
-  "native_executables_intents_assets_and_translation_resources_identical_to_r4": true,
-  "walkup_module_identical_to_r4": true,
-  "changed_archive_entries": [
-    "Payload/比亚迪.app/Info.plist",
-    "Payload/比亚迪.app/Frameworks/BYDWidgetStorage.dylib",
-    "Payload/比亚迪.app/PlugIns/BYDSmallWidgetExtension.appex/Frameworks/BYDWidgetStorage.dylib",
-    "Payload/比亚迪.app/PlugIns/BYDSmallWidgetExtension.appex/Info.plist",
-    "Payload/比亚迪.app/PlugIns/BYDLockScreenWidgetExtension.appex/Frameworks/BYDWidgetStorage.dylib",
-    "Payload/比亚迪.app/PlugIns/BYDLockScreenWidgetExtension.appex/Info.plist",
-    "Payload/比亚迪.app/PlugIns/BYDWidgetDynamicPara.appex/Frameworks/BYDWidgetStorage.dylib",
-    "Payload/比亚迪.app/PlugIns/BYDWidgetDynamicPara.appex/Info.plist",
-    "Payload/比亚迪.app/PlugIns/BYDLockScreenWidgetDynamicPara.appex/Frameworks/BYDWidgetStorage.dylib",
-    "Payload/比亚迪.app/PlugIns/BYDLockScreenWidgetDynamicPara.appex/Info.plist"
+  "translation_feed": "https://shihabal3amri.github.io/BYD-iOS/translations/channels/stable-ios.json",
+  "translation_key_id": "release-20260914",
+  "automatic_translation_updates_default": false,
+  "packaging": "Re-signable IPA for ordinary non-jailbroken iOS installation; original identifiers/groups and all four extensions preserved. No personal signing profiles.",
+  "changes": [
+    "Spanish and Simplified Chinese source mode alongside English, Arabic and Russian",
+    "Signed translation-pack updates with independent manual control and automatic updates off by default",
+    "Missing settings rows, read-only dialog text, permission resources and Home Screen shortcut title localization fixes",
+    "Existing native widgets, vehicle controls and optional walk-up features retained"
   ],
-  "fresh_install_defaults": {
-    "walkup_unlock": false,
-    "walkaway_lock": false,
-    "location_support": false,
-    "movement_hints": false,
-    "test_logging": false
-  },
-  "packaging": "Re-signable IPA with original app and extension identifiers and app-group entitlements. Keep all four app extensions when signing. No personal provisioning profile or device data.",
-  "validation": "Focused regression tests reproduce the nil-path NSData exception and verify both image writers, signed-group variants, storage recovery and unchanged native-save inputs/bytes on macOS and in an iOS 16.7.16 laboratory harness. A separate iOS harness loads the complete production module and confirms its constructor installs the guards even without app-group entitlements. Package checks preserve every R4 entry except five widget modules and five build-number plists. The exact R5 app has not yet been installed or launched on a non-jailbroken device; fixes are not yet confirmed by the issue reporters or on iOS 27 beta.",
-  "known_issue": "Inconsistent RSSI on one iPhone XS persists after iOS 18.7.10; an unintended indoor unlock was reported during earlier testing. Hardware cause is not established. Disable walk-up unlock if readings overlap between intended near and far positions or unintended actions occur.",
-  "installation_report_status": "Issue 5 shows an iOS installation failure; no installer diagnostic establishes its cause or a connection to the runtime image-storage crash.",
-  "generated_at": "2026-09-13T01:32:19.846482+00:00"
+  "validation": "301226 host regression checks;145 real UIKit shortcut checks. Signed pack3-to4 live update flow verified on iPhone X; production5 verified with the same HTTPS/store implementation on macOS. Exact production package stock-iPhone installation and final visible Home Screen shortcut menu confirmation remain pending.",
+  "limitations": [
+    "Spanish remains a draft; some artwork/live content and renderer gaps remain",
+    "Widget translations remain bundled and do not receive downloaded packs",
+    "Existing XS proximity limitation remains; indefinite background operation not guaranteed"
+  ],
+  "generated_at": "2026-09-14T10:55:53.243223+00:00"
 }

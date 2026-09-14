@@ -1,3 +1,68 @@
+# BYD iOS 9.16.0 · Revision 6
+
+## English
+
+### BYD iOS 9.16.0 · R6
+
+Adds Spanish and Simplified Chinese, signed translation downloads, and fixes for settings rows, dialogs and Home Screen shortcut titles. Open **Settings → Translations** for manual updates. Automatic updates default off; fully close and reopen BYD to apply downloads.
+
+Choose **Keep App Extensions** when installing. Open BYD for about 30 seconds after updating, then add widgets from the gallery. Widgets follow your selected language, but their translations currently update with the IPA.
+
+Requires iOS 15 or later. Spanish remains a draft; some Chinese artwork and live content remain. Widget translations stay bundled with the app. The reported XS proximity issue remains unresolved; the profile page may be blank.
+
+[Release notes & checksums](https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r6)
+
+## العربية
+
+### BYD iOS 9.16.0 · R6
+
+إضافة الإسبانية والصينية المبسطة وتنزيلات ترجمة موقعة، وإصلاح ترجمة عناصر الإعدادات والحوارات وعناوين اختصارات الشاشة الرئيسية. افتح **الإعدادات ← الترجمات** للتحديث يدويًا. التحديث التلقائي مغلق افتراضيًا؛ أغلق BYD بالكامل وأعد فتحه لتطبيق التنزيلات.
+
+اختر **Keep App Extensions** عند التثبيت. افتح BYD لنحو 30 ثانية بعد التحديث، ثم أضف الويدجت من المعرض. تتبع الويدجت اللغة المختارة، لكن ترجمتها تُحدَّث حاليًا مع ملف IPA.
+
+يتطلب iOS 15 أو أحدث. الإسبانية قيد المراجعة، وبعض الصور والمحتوى المباشر يبقى بالصينية. ترجمات الويدجت ما زالت مضمّنة في التطبيق. مشكلة الاقتراب المبلغ عنها على جهاز XS لم تُحل بعد، وقد تظهر صفحة الملف الشخصي فارغة.
+
+[تفاصيل الإصدار والتحقق من الملف](https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r6)
+
+## Русский
+
+### BYD iOS 9.16.0 · R6
+
+Добавлены испанский и упрощённый китайский, подписанные пакеты переводов и исправления текста в настройках, диалогах и быстрых действиях на главном экране. Откройте **Настройки → Переводы** для ручного обновления. Автообновление по умолчанию выключено; полностью закройте BYD и откройте снова для применения.
+
+При установке выберите **Keep App Extensions**. После обновления откройте BYD примерно на 30 секунд, затем добавьте виджеты из галереи. Они используют выбранный язык, но их переводы пока обновляются вместе с IPA.
+
+Требуется iOS 15 или новее. Испанский перевод ещё проверяется; часть изображений и динамического контента остаётся на китайском. Переводы виджетов поставляются вместе с приложением. Проблема определения приближения на одном XS не решена; страница профиля может быть пустой.
+
+[Описание выпуска и контрольные суммы](https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r6)
+
+## Español
+
+### BYD iOS 9.16.0 · R6
+
+Añade español y chino simplificado, descargas firmadas de traducciones y correcciones en ajustes, diálogos y títulos de accesos rápidos. En **Ajustes → Traducciones** puedes actualizar manualmente; las actualizaciones automáticas están desactivadas por defecto. Cierra completamente BYD y vuelve a abrirla para aplicar los cambios.
+
+Selecciona **Keep App Extensions** al instalar. Abre BYD unos 30 segundos después de actualizar y añade los widgets desde la galería. Los widgets siguen el idioma elegido, pero sus traducciones siguen incluidas en el IPA.
+
+Requiere iOS 15 o posterior. El español sigue en revisión. Algunos contenidos e imágenes permanecen en chino. Las traducciones de widgets se distribuyen con la aplicación. El problema de proximidad observado en un XS sigue sin resolverse; el perfil puede aparecer en blanco.
+
+[Notas y sumas de verificación](https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r6)
+
+## 简体中文
+
+### BYD iOS 9.16.0 · R6
+
+新增西班牙语和简体中文、签名翻译包下载，并修复设置项、对话框和主屏幕快捷操作标题的翻译。在**设置 → 翻译**中可手动更新，自动更新默认关闭。完全关闭并重新打开 BYD 后生效。
+
+安装时选择 **Keep App Extensions**。更新后打开 BYD 约 30 秒，再从小组件库添加 BYD。小组件跟随所选语言，但翻译仍包含在 IPA 中。
+
+需要 iOS 15 或更新版本。西班牙语仍在审校，部分动态内容和图片仍为中文。小组件翻译随应用包更新。已报告的 XS 靠近解锁问题仍未解决，个人资料页也可能为空白。
+
+[更新说明与校验值](https://github.com/shihabal3amri/BYD-iOS/releases/tag/v9.16.0-r6)
+
+
+---
+
 # Changes
 
 ## 9.16.0 · Revision 5 — 13 September 2026
