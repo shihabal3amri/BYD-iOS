@@ -1,0 +1,1 @@
+{"engineMax":2,"engineMin":2,"files":[{"bytes":5087133,"path":"packs/7/ios/payload.json","sha256":"20bc2792818ef8910f2bf8c1ce4cb54fccbb8cdb0bc6a15862268bf2d6f1b110"}],"platform":"ios","revision":7,"schemaVersion":2,"signing":{"algorithm":"ecdsa-p256-sha256-der","keyId":"release-20260914"}}
